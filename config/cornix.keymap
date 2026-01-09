@@ -177,7 +177,7 @@
 
         combo_caps_lock {
             key-positions = <29 32>;
-            bindings = <&kp CAPSLOCK>
+            bindings = <&kp CAPSLOCK>;
         };
 
         combo_esc {
