@@ -54,6 +54,7 @@
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         hm_r: homerow_mods_right {
@@ -67,6 +68,7 @@
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         // Positional Homerow mods for shift
@@ -86,6 +88,7 @@
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         hm_shift_r: hm_shift_r {
@@ -102,6 +105,7 @@
             // for quick tapping; shift+~
 
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         /*
@@ -133,46 +137,92 @@
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <200>;
         };
-    };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
+        td_lprn_lcbr: tap_dance_left_prn_cbr {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LPAR> <&kp LBRC>;
+        };
 
-        adjust_layer {
-            if-layers = <3 2>;
-            then-layer = <4>;
+        td_rprn_rcbr: tap_dance_right_prn_cbr {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RPAR> <&kp RBRC>;
+        };
+
+        td_comm_scln: tap_dance_comm_scln {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp COMMA> <&kp SEMICOLON>;
+        };
+
+        td_slsh_scln: tap_dance_slsh_scln {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SLASH> <&kp SEMICOLON>;
         };
     };
-
+    
     combos {
         compatible = "zmk,combos";
 
-        cb_ltm {
+        combo_caps_word {
+            key-positions = <28 33>;
+            bindings = <&caps_word>;
+        };
+
+        combo_caps_lock {
+            key-positions = <29 32>;
+            bindings = <&kp CAPSLOCK>
+        };
+
+        combo_esc {
+            key-positions = <0 1>;
             bindings = <&kp ESC>;
-            key-positions = <2 4>;
-            layers = <0 1>;
         };
 
-        cb_lm {
-            bindings = <&kp TAB>;
-            key-positions = <14 16>;
-            layers = <0 1>;
+        combo_copy {
+            key-positions = <26 27>;
+            bindings = <&kp LC(C)>;
         };
 
-        cb_enter {
-            bindings = <&kp RET>;
-            key-positions = <21 19>;
-            layers = <0 1>;
+        combo_cut {
+            key-positions = <26 28>;
+            bindings = <&kp LC(X)>;
         };
 
-        layer3 {
-            bindings = <&kp N3>;
-            key-positions = <5 6>;
+        combo_paste {
+            key-positions = <27 28>;
+            bindings = <&kp LC(V)>;
         };
 
-        layer4 {
-            bindings = <&kp N4>;
-            key-positions = <5 6>;
+        combo_game {
+            key-positions = <0 11>;
+            bindings = <&tog 6>;
+        };
+
+        combo_semicolon {
+            key-positions = <34 35>;
+            bindings = <&kp SEMICOLON>;
+        };
+
+        combo_quote {
+            key-positions = <35 36>;
+            bindings = <&kp DOUBLE_QUOTES>;
+        };
+
+        combo_canary {
+            key-positions = <30 31>;
+            bindings = <&tog 1>;
+        };
+
+        combo_num {
+            key-positions = <33 34 35>;
+            bindings = <&tog 3>;
         };
     };
 
@@ -192,7 +242,7 @@
             bindings = <
 &kp GRAVE      &kp Q             &kp W    &kp E                     &kp R          &kp T                       &kp Y      &kp U          &kp I                      &kp O         &kp P                 &kp BACKSPACE
 &kp BACKSPACE  &hm_l LEFT_ALT A  &lt 4 S  &hm_shift_l LEFT_SHIFT D  &lt 3 F        &kp G                       &kp H      &lt 5 J        &hm_shift_r RIGHT_SHIFT K  &hm_r RALT L  &hm_r RIGHT_ALT SEMI  &kp SQT
-&mo 4          &hm_l LGUI Z      &kp X    &kp C                     &hm_l LCTRL V  &kp B         &none  &none  &kp N      &hm_r RCTRL M  &kp COMMA                  &lt 5 DOT     &hm_r RGUI SLASH      &kp BACKSPACE
+&td_lprn_lcbr          &hm_l LGUI Z      &kp X    &kp C                     &hm_l LCTRL V  &kp B         &none  &none  &kp N      &hm_r RCTRL M  &td_comm_scln                  &lt 5 DOT     &hm_r RGUI SLASH      &td_rprn_rcbr
 &none          &none             &none    &kp BACKSPACE             &lt 5 TAB      &kp C_REPEAT                &kp SPACE  &lt 2 ENTER    &lt 2 DELETE               &none         &none                 &none
             >;
 
@@ -212,10 +262,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&trans    &trans         &trans        &trans         &trans               &trans                  &trans  &trans               &trans         &trans        &trans            &trans
-&trans    &hm_l LCTRL A  &hm_l LALT S  &hm_l LCTRL D  &hm_shift_l LSHFT F  &trans                  &trans  &hm_shift_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L  &hm_r RCTRL SEMI  &trans
-&kp LGUI  &trans         &trans        &trans         &trans               &trans  &trans  &trans  &trans  &trans               &trans         &trans        &trans            &trans
-&none     &none          &none         &trans         &trans               &trans                  &trans  &trans               &trans         &none         &none             &none
+&kp GRAVE      &kp W             &kp L    &kp Y                     &kp P          &kp B                       &kp Z      &kp F          &kp O                      &kp U         &kp SQT                 &kp BACKSLASH
+&kp BACKSPACE  &hm_l LEFT_ALT C  &lt 4 R  &hm_shift_l LEFT_SHIFT S  &lt 3 T        &kp G                       &kp M      &lt 5 N        &hm_shift_r RIGHT_SHIFT E  &hm_r RALT I  &hm_r RIGHT_ALT A  &kp SEMICOLON
+&td_lprn_lcbr          &hm_l LGUI Q      &kp J    &kp V                     &hm_l LCTRL D  &kp K         &none  &none  &kp X      &hm_r RCTRL H  &td_slsh_scln                  &lt 5 COMMA     &hm_r RGUI DOT      &td_rprn_rcbr
+&none          &none             &none    &kp BACKSPACE             &lt 5 TAB      &kp C_REPEAT                &kp SPACE  &lt 2 ENTER    &lt 2 DELETE               &none         &none                 &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
