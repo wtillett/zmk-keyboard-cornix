@@ -249,6 +249,11 @@
             key-positions = <33 34 35>;
             bindings = <&tog 3>;
         };
+
+        combo_debug {
+            bindings = <&mo 7>;
+            key-positions = <40 39>;
+        };
     };
 
     keymap {
@@ -265,15 +270,15 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp Q         &kp W  &kp E                     &kp R          &kp T                            &kp Y      &kp U          &kp I                      &kp O      &kp P                 &kp BACKSPACE
-&kp BACKSPACE  &kp A         &kp S  &hm_shift_l LEFT_SHIFT D  &lt 3 F        &kp G                            &kp H      &lt 5 J        &hm_shift_r RIGHT_SHIFT K  &kp L      &hm_r RIGHT_ALT SEMI  &kp SQT
-&td_lprn_lcbr  &hm_gui_l LGUI Z  &kp X  &kp C                     &hm_l LCTRL V  &kp B         &kp K_MUTE  &none  &kp N      &hm_r RCTRL M  &td_comm_scln              &lt 5 DOT  &hm_gui_r RGUI SLASH      &td_rprn_rcbr
-&none          &none         &none  &kp BACKSPACE             &lt 4 TAB      &kp C_REPEAT                     &kp SPACE  &lt 4 ENTER    &lt 2 DELETE               &none      &none                 &none
+&kp GRAVE      &kp Q             &kp W  &kp E                     &kp R          &kp T                               &kp Y      &kp U          &kp I                      &kp O      &kp P                 &kp BACKSPACE
+&kp BACKSPACE  &kp A             &kp S  &hm_shift_l LEFT_SHIFT D  &lt 3 F        &kp G                               &kp H      &lt 5 J        &hm_shift_r RIGHT_SHIFT K  &kp L      &hm_r RIGHT_ALT SEMI  &kp SQT
+&td_lprn_lcbr  &hm_gui_l LGUI Z  &kp X  &kp C                     &hm_l LCTRL V  &kp B         &kp K_MUTE  &mkp MB3  &kp N      &hm_r RCTRL M  &td_comm_scln              &lt 5 DOT  &hm_gui_r RGUI SLASH  &td_rprn_rcbr
+&none          &none             &none  &kp BACKSPACE             &lt 4 TAB      &kp C_REPEAT                        &kp SPACE  &lt 4 ENTER    &lt 2 DELETE               &none      &none                 &none
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         canary_layer {
@@ -287,10 +292,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp W         &kp L  &kp Y                     &kp P          &kp B                         &kp Z      &kp F          &kp O                      &kp U        &kp SQT            &kp BACKSLASH
-&kp BACKSPACE  &kp C         &kp R  &hm_shift_l LEFT_SHIFT S  &lt 3 T        &kp G                         &kp M      &lt 5 N        &hm_shift_r RIGHT_SHIFT E  &kp I        &hm_r RIGHT_ALT A  &kp SEMICOLON
-&td_lprn_lcbr  &hm_gui_l LGUI Q  &kp J  &kp V                     &hm_l LCTRL D  &kp K         &trans  &trans  &kp X      &hm_r RCTRL H  &td_slsh_scln              &lt 5 COMMA  &hm_gui_r RGUI DOT     &td_rprn_rcbr
-&none          &none         &none  &kp BACKSPACE             &lt 4 TAB      &kp C_REPEAT                  &kp SPACE  &lt 4 ENTER    &lt 2 DELETE               &none        &none              &none
+&kp GRAVE      &kp W             &kp L  &kp Y                     &kp P          &kp B                         &kp Z      &kp F          &kp O                      &kp U        &kp SQT             &kp BACKSLASH
+&kp BACKSPACE  &kp C             &kp R  &hm_shift_l LEFT_SHIFT S  &lt 3 T        &kp G                         &kp M      &lt 5 N        &hm_shift_r RIGHT_SHIFT E  &kp I        &hm_r RIGHT_ALT A   &kp SEMICOLON
+&td_lprn_lcbr  &hm_gui_l LGUI Q  &kp J  &kp V                     &hm_l LCTRL D  &kp K         &trans  &trans  &kp X      &hm_r RCTRL H  &td_slsh_scln              &lt 5 COMMA  &hm_gui_r RGUI DOT  &td_rprn_rcbr
+&none          &none             &none  &kp BACKSPACE             &lt 4 TAB      &kp C_REPEAT                  &kp SPACE  &lt 4 ENTER    &lt 2 DELETE               &none        &none               &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -392,10 +397,10 @@
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none        &none  &none   &none  &none  &none
-&none       &none         &none         &none         &none         &none                         &none        &none  &none   &none  &none  &none
-&none       &none         &none         &none         &none         &bootloader   &trans  &trans  &bootloader  &none  &none   &none  &none  &none
-&none       &none         &none         &none         &none         &none                         &none        &none  &kp N7  &none  &none  &none
+&none  &none  &none  &none       &none  &none                                &none        &none  &none  &none  &none  &none
+&none  &none  &none  &none       &none  &sys_reset                           &sys_reset   &none  &none  &none  &none  &none
+&none  &none  &none  &none       &none  &bootloader  &bt BT_CLR_ALL  &trans  &bootloader  &none  &none  &none  &none  &none
+&none  &none  &none  &bt BT_NXT  &none  &none                                &none        &none  &none  &none  &none  &none
             >;
         };
     };
