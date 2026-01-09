@@ -210,7 +210,7 @@
         };
 
         combo_quote {
-            key-positions = <35 36>;
+            key-positions = <33 34>;
             bindings = <&kp DOUBLE_QUOTES>;
         };
 
