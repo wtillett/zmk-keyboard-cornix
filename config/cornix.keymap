@@ -239,10 +239,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp Q             &kp W    &kp E                     &kp R          &kp T                            &kp Y      &kp U          &kp I                      &kp O         &kp P                 &kp BACKSPACE
-&kp BACKSPACE  &hm_l LEFT_ALT A  &lt 4 S  &hm_shift_l LEFT_SHIFT D  &lt 3 F        &kp G                            &kp H      &lt 5 J        &hm_shift_r RIGHT_SHIFT K  &hm_r RALT L  &hm_r RIGHT_ALT SEMI  &kp SQT
-&td_lprn_lcbr  &hm_l LGUI Z      &kp X    &kp C                     &hm_l LCTRL V  &kp B         &kp K_MUTE  &none  &kp N      &hm_r RCTRL M  &td_comm_scln              &lt 5 DOT     &hm_r RGUI SLASH      &td_rprn_rcbr
-&none          &none             &none    &kp BACKSPACE             &lt 5 TAB      &kp C_REPEAT                     &kp SPACE  &lt 2 ENTER    &lt 2 DELETE               &none         &none                 &none
+&kp GRAVE      &kp Q         &kp W  &kp E                     &kp R          &kp T                            &kp Y      &kp U          &kp I                      &kp O      &kp P                 &kp BACKSPACE
+&kp BACKSPACE  &kp A         &kp S  &hm_shift_l LEFT_SHIFT D  &lt 3 F        &kp G                            &kp H      &lt 5 J        &hm_shift_r RIGHT_SHIFT K  &kp L      &hm_r RIGHT_ALT SEMI  &kp SQT
+&td_lprn_lcbr  &hm_l LGUI Z  &kp X  &kp C                     &hm_l LCTRL V  &kp B         &kp K_MUTE  &none  &kp N      &hm_r RCTRL M  &td_comm_scln              &lt 5 DOT  &hm_r RGUI SLASH      &td_rprn_rcbr
+&none          &none         &none  &kp BACKSPACE             &lt 4 TAB      &kp C_REPEAT                     &kp SPACE  &lt 4 ENTER    &lt 2 DELETE               &none      &none                 &none
             >;
 
             sensor-bindings =
@@ -261,10 +261,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp W             &kp L    &kp Y                     &kp P          &kp B                       &kp Z      &kp F          &kp O                      &kp U         &kp SQT            &kp BACKSLASH
-&kp BACKSPACE  &hm_l LEFT_ALT C  &lt 4 R  &hm_shift_l LEFT_SHIFT S  &lt 3 T        &kp G                       &kp M      &lt 5 N        &hm_shift_r RIGHT_SHIFT E  &hm_r RALT I  &hm_r RIGHT_ALT A  &kp SEMICOLON
-&td_lprn_lcbr  &hm_l LGUI Q      &kp J    &kp V                     &hm_l LCTRL D  &kp K         &none  &none  &kp X      &hm_r RCTRL H  &td_slsh_scln              &lt 5 COMMA   &hm_r RGUI DOT     &td_rprn_rcbr
-&none          &none             &none    &kp BACKSPACE             &lt 5 TAB      &kp C_REPEAT                &kp SPACE  &lt 2 ENTER    &lt 2 DELETE               &none         &none              &none
+&kp GRAVE      &kp W         &kp L  &kp Y                     &kp P          &kp B                         &kp Z      &kp F          &kp O                      &kp U        &kp SQT            &kp BACKSLASH
+&kp BACKSPACE  &kp C         &kp R  &hm_shift_l LEFT_SHIFT S  &lt 3 T        &kp G                         &kp M      &lt 5 N        &hm_shift_r RIGHT_SHIFT E  &kp I        &hm_r RIGHT_ALT A  &kp SEMICOLON
+&td_lprn_lcbr  &hm_l LGUI Q  &kp J  &kp V                     &hm_l LCTRL D  &kp K         &trans  &trans  &kp X      &hm_r RCTRL H  &td_slsh_scln              &lt 5 COMMA  &hm_r RGUI DOT     &td_rprn_rcbr
+&none          &none         &none  &kp BACKSPACE             &lt 4 TAB      &kp C_REPEAT                  &kp SPACE  &lt 4 ENTER    &lt 2 DELETE               &none        &none              &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -328,27 +328,31 @@
 &none    &none      &none      &none     &none      &none                        &none       &none                 &none                  &none      &none     &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Windows_layer {
             display-name = "Windows";
             bindings = <
-&none  &none  &none           &mmv MOVE_UP    &kp PAGE_UP      &kp PAGE_DOWN                   &mkp MB1  &mkp MB3  &mkp MB2  &msc SCRL_UP  &msc SCRL_DOWN  &none
-&none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP                    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT     &none           &none
-&none  &none  &none           &none           &none            &msc SCRL_DOWN  &trans  &trans  &trans    &trans    &none     &none         &none           &none
-&none  &none  &none           &mo 7           &trans           &trans                          &none     &none     &kp N5    &none         &none           &none
+&none  &kp F1  &kp F2  &kp F3     &kp F4   &kp F5                   &none  &none  &none        &none            &msc SCRL_DOWN  &none
+&none  &kp F6  &none   &kp LG(D)  &none    &kp F7                   &none  &none  &kp LA(TAB)  &kp LA(LS(TAB))  &none           &none
+&none  &kp F8  &kp F9  &kp F10    &kp F11  &kp F12  &trans  &trans  &none  &none  &none        &none            &none           &none
+&none  &none   &none   &none      &none    &none                    &none  &none  &none        &none            &none           &none
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Game_layer {
             display-name = "Game";
             bindings = <
-&mo 7  &none  &none  &none  &none  &none                  &kp KP_N7        &kp KP_N8        &kp KP_N9        &kp KP_MINUS  &kp KP_MULTIPLY  &none
-&none  &none  &none  &none  &none  &none                  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6        &kp KP_PLUS   &kp KP_DIVIDE    &none
-&none  &none  &none  &none  &none  &none  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &none         &none            &none
-&none  &none  &none  &none  &none  &mo 7                  &kp KP_N0        &kp KP_DOT       &kp KP_NUMBER_0  &none         &none            &none
+&kp GRAVE  &kp Q  &kp W  &kp E     &kp R      &kp T                      &kp Y      &kp U      &kp I      &kp O    &kp P     &kp BSPC
+&kp TAB    &kp A  &kp S  &kp D     &kp F      &kp G                      &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V      &kp B      &trans  &trans  &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
+&none      &none  &none  &kp LALT  &kp LSHFT  &kp SPACE                  &kp SPACE  &kp ENTER  &kp RGUI   &none    &none     &none
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Debug_layer {
