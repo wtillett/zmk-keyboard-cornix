@@ -142,28 +142,28 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LPAR> <&kp LBRC>;
+            bindings = <&kp LPAR>, <&kp LBRC>;
         };
 
         td_rprn_rcbr: tap_dance_right_prn_cbr {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp RPAR> <&kp RBRC>;
+            bindings = <&kp RPAR>, <&kp RBRC>;
         };
 
         td_comm_scln: tap_dance_comm_scln {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp COMMA> <&kp SEMICOLON>;
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
         };
 
         td_slsh_scln: tap_dance_slsh_scln {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp SLASH> <&kp SEMICOLON>;
+            bindings = <&kp SLASH>, <&kp SEMICOLON>;
         };
     };
     
