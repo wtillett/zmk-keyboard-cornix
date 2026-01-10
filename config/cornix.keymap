@@ -266,6 +266,11 @@
             bindings = <&mo 7>;
             key-positions = <40 39>;
         };
+
+        combo_debug_r {
+            bindings = <&mo 7>;
+            key-positions = <48 47>;
+        };
     };
 
     keymap {
@@ -409,7 +414,7 @@
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
             bindings = <
-&kp A  &none  &none  &none       &none  &none                                &none        &none  &none  &none  &none  &none
+&kp L  &none  &none  &none       &none  &none                                &kp R        &none  &none  &none  &none  &none
 &none  &none  &none  &none       &none  &sys_reset                           &sys_reset   &none  &none  &none  &none  &none
 &none  &none  &none  &none       &none  &bootloader  &bt BT_CLR_ALL  &trans  &bootloader  &none  &none  &none  &none  &none
 &none  &none  &none  &bt BT_NXT  &none  &none                                &none        &none  &none  &none  &none  &none
