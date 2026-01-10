@@ -42,7 +42,7 @@
     // Activate ADJUST layer by pressing raise and lower
 
     behaviors {
-        hm_l: homerow_mods_left {
+        hm_lctrl: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
@@ -56,7 +56,7 @@
             hold-while-undecided;
         };
 
-        hm_gui_l: homerow_mods_gui_left {
+        hm_l: homerow_mods_gui_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
@@ -69,7 +69,7 @@
             hold-trigger-on-release;
         };
 
-        hm_r: homerow_mods_right {
+        hm_rctrl: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
@@ -83,7 +83,7 @@
             hold-while-undecided;
         };
 
-        hm_gui_r: homerow_mods_gui_right {
+        hm_r: homerow_mods_gui_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
@@ -287,10 +287,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp Q             &kp W  &kp E                     &kp R          &kp T                               &kp Y      &kp U          &kp I                      &kp O      &kp P                 &kp BACKSPACE
-&kp BACKSPACE  &kp A             &kp S  &hm_shift_l LEFT_SHIFT D  &lt 3 F        &kp G                               &kp H      &lt 5 J        &hm_shift_r RIGHT_SHIFT K  &kp L      &hm_r RIGHT_ALT SEMI  &kp SQT
-&td_lprn_lcbr  &hm_gui_l LGUI Z  &kp X  &kp C                     &hm_l LCTRL V  &kp B         &kp K_MUTE  &mkp MB3  &kp N      &hm_r RCTRL M  &td_comm_scln              &lt 5 DOT  &hm_gui_r RGUI SLASH  &td_rprn_rcbr
-&none          &none             &none  &kp BACKSPACE             &lt 4 TAB      &kp C_REPEAT                        &kp SPACE  &lt 4 ENTER    &lt_nav 2 DELETE               &none      &none                 &none
+&kp GRAVE      &kp Q         &kp W  &kp E                     &kp R              &kp T                               &kp Y      &kp U              &kp I                      &kp O      &kp P                 &kp BACKSPACE
+&kp BACKSPACE  &kp A         &kp S  &hm_shift_l LEFT_SHIFT D  &lt 3 F            &kp G                               &kp H      &lt 5 J            &hm_shift_r RIGHT_SHIFT K  &kp L      &hm_r RIGHT_ALT SEMI  &kp SQT
+&td_lprn_lcbr  &hm_l LGUI Z  &kp X  &kp C                     &hm_lctrl LCTRL V  &kp B         &kp K_MUTE  &mkp MB3  &kp N      &hm_rctrl RCTRL M  &td_comm_scln              &lt 5 DOT  &hm_r RGUI SLASH      &td_rprn_rcbr
+&none          &none         &none  &kp BACKSPACE             &lt 4 TAB          &kp C_REPEAT                        &kp SPACE  &lt 4 ENTER        &lt_nav 2 DELETE           &none      &none                 &none
             >;
 
             sensor-bindings =
@@ -309,10 +309,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp W             &kp L  &kp Y                     &kp P          &kp B                         &kp Z      &kp F          &kp O                      &kp U        &kp SQT             &kp BACKSLASH
-&kp BACKSPACE  &kp C             &kp R  &hm_shift_l LEFT_SHIFT S  &lt 3 T        &kp G                         &kp M      &lt 5 N        &hm_shift_r RIGHT_SHIFT E  &kp I        &hm_r RIGHT_ALT A   &kp SEMICOLON
-&td_lprn_lcbr  &hm_gui_l LGUI Q  &kp J  &kp V                     &hm_l LCTRL D  &kp K         &trans  &trans  &kp X      &hm_r RCTRL H  &td_slsh_scln              &lt 5 COMMA  &hm_gui_r RGUI DOT  &td_rprn_rcbr
-&none          &none             &none  &kp BACKSPACE             &lt 4 TAB      &kp C_REPEAT                  &kp SPACE  &lt 4 ENTER    &lt_nav 2 DELETE               &none        &none               &none
+&kp GRAVE      &kp W         &kp L  &kp Y                     &kp P              &kp B                         &kp Z      &kp F              &kp O                      &kp U        &kp SQT            &kp BACKSLASH
+&kp BACKSPACE  &kp C         &kp R  &hm_shift_l LEFT_SHIFT S  &lt 3 T            &kp G                         &kp M      &lt 5 N            &hm_shift_r RIGHT_SHIFT E  &kp I        &hm_r RIGHT_ALT A  &kp SEMICOLON
+&td_lprn_lcbr  &hm_l LGUI Q  &kp J  &kp V                     &hm_lctrl LCTRL D  &kp K         &trans  &trans  &kp X      &hm_rctrl RCTRL H  &td_slsh_scln              &lt 5 COMMA  &hm_r RGUI DOT     &td_rprn_rcbr
+&none          &none         &none  &kp BACKSPACE             &lt 4 TAB          &kp C_REPEAT                  &kp SPACE  &lt 4 ENTER        &lt_nav 2 DELETE           &none        &none              &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -414,10 +414,10 @@
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
             bindings = <
-&kp L  &none  &none  &none       &none  &none                                &kp R        &none  &none  &none  &none  &none
-&none  &none  &none  &none       &none  &sys_reset                           &sys_reset   &none  &none  &none  &none  &none
-&none  &none  &none  &none       &none  &bootloader  &bt BT_CLR_ALL  &trans  &bootloader  &none  &none  &none  &none  &none
-&none  &none  &none  &bt BT_NXT  &none  &none                                &none        &none  &none  &none  &none  &none
+&kp L  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                          &kp R        &none  &none  &none  &none  &none
+&none  &none  &none         &none         &none         &sys_reset                            &sys_reset   &none  &none  &none  &none  &none
+&none  &none  &none         &none         &none         &bootloader   &bt BT_CLR_ALL  &trans  &bootloader  &none  &none  &none  &none  &none
+&none  &none  &none         &bt BT_NXT    &none         &none                                 &none        &none  &none  &none  &none  &none
             >;
         };
     };
