@@ -264,7 +264,7 @@
 
         combo_canary {
             key-positions = <1 2 3 4 7 8 9 10>;
-            bindings = <&tog 2>;
+            bindings = <&tog 1>;
         };
 
         combo_num {
