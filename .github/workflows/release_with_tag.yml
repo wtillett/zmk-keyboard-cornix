@@ -1,6 +1,9 @@
 name: Auto Build & Release ZMK Firmware
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
@@ -18,7 +21,7 @@ jobs:
       - name: Download built firmware
         uses: actions/download-artifact@v4
         with:
-          name: firmware   # This must match the artifact name in build-user-config.yml
+          name: firmware # This must match the artifact name in build-user-config.yml
           path: ./artifacts
       - name: Display structure of downloaded files
         run: ls -R ./artifacts

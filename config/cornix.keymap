@@ -17,13 +17,16 @@
 #define HM_TAPPING_TERM_FAST 200
 #define HM_PRIOR_IDLE 70
 #define BASE 0
-#define WIN 1
-#define LOWER 2
-#define RAISE 3
-#define ADJUST 4
-#define NAVI   5
-#define NUM    6
-#define DEBUG  7
+#define CANARY 1
+#define NAV 2
+#define NUM 3
+#define SYM 4
+#define WIN 5
+#define GAME 6
+#define DEBUG 7
+
+/* enums to set in sources to filter events in zmk,output-behavior-listener */
+#define OUTPUT_SOURCE_LAYER_STATE_CHANGE 1
 
 // https://github.com/urob/zmk-config/tree/main#timeless-homerow-mods
 
@@ -40,8 +43,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    // Activate ADJUST layer by pressing raise and lower
-
     behaviors {
         hm_lctrl: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
@@ -212,6 +213,26 @@
 
             label = "TD_SCLN_SQT";
         };
+
+        // Listener to do something upon entering and exiting layers
+
+        kp_on_enter_BASE_layer {
+            compatible = "zmk,output-behavior-listener";
+            sources = <OUTPUT_SOURCE_LAYER_STATE_CHANGE>;
+            layers = <BASE>;
+            bindings = <&kp B>;
+            tap-ms = <30>;
+        };
+
+        kp_on_enter_NAV_layer {
+            compatible = "zmk,output-behavior-listener";
+            sources = <OUTPUT_SOURCE_LAYER_STATE_CHANGE>;
+            layers = <NAV>;
+            bindings = <&kp N>;
+            tap-ms = <30>;
+        };
+
+
     };
 
     combos {

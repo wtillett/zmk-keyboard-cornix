@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/urob
     - name: janpfischer
       url-base: https://github.com/janpfischer
+    - name: badjeff
+      url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -31,5 +33,8 @@ manifest:
     #  remote: janpfischer
     #  revision: main
     #  clone-depth: 1
+    - name: zmk-output-behavior-listener
+      remote: badjeff
+      revision: main
   self:
     path: config
