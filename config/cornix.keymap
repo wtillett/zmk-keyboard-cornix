@@ -25,9 +25,6 @@
 #define GAME 6
 #define DEBUG 7
 
-/* enums to set in sources to filter events in zmk,output-behavior-listener */
-#define OUTPUT_SOURCE_LAYER_STATE_CHANGE 1
-
 // https://github.com/urob/zmk-config/tree/main#timeless-homerow-mods
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left hand
@@ -212,27 +209,18 @@
             bindings = <&kp SEMICOLON>, <&kp SQT>;
 
             label = "TD_SCLN_SQT";
-        };
+        };        
+    };
 
-        // Listener to do something upon entering and exiting layers
+    // Do something when layers are entered and left
 
-        kp_on_enter_BASE_layer {
-            compatible = "zmk,output-behavior-listener";
-            sources = <OUTPUT_SOURCE_LAYER_STATE_CHANGE>;
-            layers = <BASE>;
-            bindings = <&kp B>;
-            tap-ms = <30>;
-        };
+    layer_listeners {
+        compatible = "zmk,layer-listeners";
 
-        kp_on_enter_NAV_layer {
-            compatible = "zmk,output-behavior-listener";
-            sources = <OUTPUT_SOURCE_LAYER_STATE_CHANGE>;
+        nav_listener {
             layers = <NAV>;
-            bindings = <&kp N>;
-            tap-ms = <30>;
+            bindings = <&kp N &kp B>;
         };
-
-
     };
 
     combos {
