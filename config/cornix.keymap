@@ -241,8 +241,8 @@
                 trigger-keys = <U>;
                 bindings = <&kp I>;
                 max-prior-idle-ms = <300>;
-            }
-        }
+            };
+        };
     };
 
     combos {
