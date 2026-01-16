@@ -19,6 +19,9 @@ manifest:
       remote: urob
       revision: main
       clone-depth: 1
+    - name: zmk-adaptive-key
+      remote: urob
+      revision: main
     #- name: zmk-rgbled-widget
     #  remote: hitsmaxft
     #  revision: main

@@ -7,9 +7,10 @@
 #include "cornix.dtsi"
 
 &kscan0 {
+    wakeup-source;
     //Row pins for nrfmicro - mapped to physical pins
     //Left: [P0_30, P0_31, P0_29, P0_02]
-    //Right: [P1_09, P0_28, P0_03, P1_10]
+    //Right: [P1_09, P0_28, P0_03, P1_10]    
     row-gpios
         = <&gpio0 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Row 0
         , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Row 1

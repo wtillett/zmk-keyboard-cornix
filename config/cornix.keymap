@@ -40,9 +40,11 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    // Activate ADJUST layer by pressing raise and lower
 
     behaviors {
+
+        // Home Row Mods
+
         hm_lctrl: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -176,6 +178,8 @@
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
         };
 
+        // Tap Dances
+
         td_lprn_lcbr: tap_dance_left_prn_cbr {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -212,6 +216,33 @@
 
             label = "TD_SCLN_SQT";
         };
+
+        // Adaptive Keys
+
+        shift-repeat: shift-repeat {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&sk LSHFT>;
+
+            repeat {
+                trigger-keys = <A B C D E F G H I J K L M N O P Q R S T V W X Y Z>;
+                bindings = <&key_repeat>;
+                max-prior-idle-ms = <350>;
+                strict-modifiers;
+            };
+
+            arrow {
+                trigger-keys = <MINUS EQUAL>;
+                bindings = <&kp GT>;
+                max-prior-idle-ms = <300>;
+            };
+
+            u_i {
+                trigger-keys = <U>;
+                bindings = <&kp I>;
+                max-prior-idle-ms = <300>;
+            }
+        }
     };
 
     combos {
@@ -289,19 +320,6 @@
     };
 
     macros {
-        kt_arrow: kt_arrow {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GT>;
-            label = "KT_ARROW";
-        };
-
-        js_arrow: js_arrow {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp GT>;
-            label = "JS_ARROW";
-        };
 
         bm_poc_path: bm_poc_path {
             compatible = "zmk,behavior-macro";
@@ -328,7 +346,7 @@
 &kp GRAVE      &kp Q         &kp W    &kp E                     &kp R              &kp T                               &kp Y        &kp U              &kp I                      &kp O    &kp P                 &kp BSLH
 &kp BACKSPACE  &kp A         &lt 4 S  &hm_shift_l LEFT_SHIFT D  &lt 3 F            &kp G                               &kp H        &lt 5 J            &hm_shift_r RIGHT_SHIFT K  &lt 4 L  &hm_r RIGHT_ALT SEMI  &kp SQT
 &td_lprn_lcbr  &hm_l LGUI Z  &kp X    &kp C                     &hm_lctrl LCTRL V  &kp B           &kp C_MUTE  &tog 1  &kp N        &hm_rctrl RCTRL M  &kp COMMA                  &kp DOT  &hm_r RGUI SLASH      &td_rprn_rcbr
-&kp LALT       &none         &none    &lt_nav 5 BSPC            &lt 4 TAB          &lt 5 C_REPEAT                      &lt 5 SPACE  &lt 4 ENTER        &lt_nav 2 DELETE           &none    &none                 &none
+&kp LALT       &none         &none    &lt_nav 5 BSPC            &lt 4 TAB          &shift-repeat                      &lt 5 SPACE  &lt 4 ENTER        &lt_nav 2 DELETE           &none    &none                 &none
             >;
 
             sensor-bindings =
@@ -391,7 +409,7 @@
 &trans  &kp N3  &kp N2  &kp N1  &none   &none                      &kp PLUS   &kp N7  &kp N8   &kp N9  &kp ASTRK  &kp BSPC
 &trans  &kp N6  &kp N5  &kp N4  &none   &none                      &kp COMMA  &kp N4  &kp N5   &kp N6  &kp SLASH  &none
 &trans  &kp N9  &kp N8  &kp N7  &none   &none      &trans  &trans  &kp MINUS  &kp N1  &kp N2   &kp N3  &kp SLASH  &kp ENTER
-&none   &none   &none   &none   &trans  &kp ENTER                  &kp TAB    &kp N0  &kp DOT  &none   &none      &none
+&bm_poc_path   &none   &none   &trans   &trans  &kp ENTER                  &kp TAB    &kp N0  &kp DOT  &none   &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
