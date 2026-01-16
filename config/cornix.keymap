@@ -214,14 +214,14 @@
 
     // Do something when layers are entered and left
 
-    layer_listeners {
-        compatible = "zmk,layer-listeners";
+    // layer_listeners {
+    //     compatible = "zmk,layer-listeners";
 
-        nav_listener {
-            layers = <NAV>;
-            bindings = <&kp N &kp B>;
-        };
-    };
+    //     nav_listener {
+    //         layers = <NAV>;
+    //         bindings = <&kp N &kp B>;
+    //     };
+    // };
 
     combos {
         compatible = "zmk,combos";
