@@ -29,6 +29,7 @@ include:
   - board: cornix_left
     # shield: cornix_indicator
     artifact-name: cornix_left_default_nosd
+    snippet: zmk-usb-logging
 
   # - board: cornix_ph_left
   #   # shield: cornix_indicator

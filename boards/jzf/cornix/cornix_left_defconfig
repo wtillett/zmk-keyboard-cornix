@@ -1,7 +1,5 @@
 # e73 config
 
-CONFIG_ZMK_USB_LOGGING=y
-
 CONFIG_ADC_NRFX_SAADC=y
 
 # Enable MPU
