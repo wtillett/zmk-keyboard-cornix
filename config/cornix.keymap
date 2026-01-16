@@ -258,7 +258,7 @@
         };
 
         combo_quote {
-            key-positions = <35 36>;
+            key-positions = <34 33>;
             bindings = <&kp DOUBLE_QUOTES>;
         };
 
@@ -288,6 +288,29 @@
         };
     };
 
+    macros {
+        kt_arrow: kt_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "KT_ARROW";
+        };
+
+        js_arrow: js_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "JS_ARROW";
+        };
+
+        bm_poc_path: bm_poc_path {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp H &kp O &kp M &kp E &kp N2 &kp FSLH &kp F &kp T &kp P &kp FSLH &kp W &kp E &kp E &kp K &kp L &kp Y &kp FSLH &kp W &kp T &kp I &kp L &kp L &kp E &kp T &kp T &kp FSLH>;
+            label = "BM_POC_PATH";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -302,15 +325,15 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp Q         &kp W    &kp E                     &kp R              &kp T                                 &kp Y        &kp U              &kp I                      &kp O    &kp P                 &kp BACKSPACE
-&kp BACKSPACE  &kp A         &lt 4 S  &hm_shift_l LEFT_SHIFT D  &lt 3 F            &kp G                                 &kp H        &lt 5 J            &hm_shift_r RIGHT_SHIFT K  &lt 4 L  &hm_r RIGHT_ALT SEMI  &kp SQT
-&td_lprn_lcbr  &hm_l LGUI Z  &kp X    &kp C                     &hm_lctrl LCTRL V  &kp B           &kp K_MUTE  &mkp MB3  &kp N        &hm_rctrl RCTRL M  &td_comm_scln              &kp DOT  &hm_r RGUI SLASH      &td_rprn_rcbr
-&none          &none         &none    &lt_nav 5 BSPC            &lt 4 TAB          &lt 5 C_REPEAT                        &lt 5 SPACE  &lt 4 ENTER        &lt_nav 2 DELETE           &none    &none                 &none
+&kp GRAVE      &kp Q         &kp W    &kp E                     &kp R              &kp T                               &kp Y        &kp U              &kp I                      &kp O    &kp P                 &kp BSLH
+&kp BACKSPACE  &kp A         &lt 4 S  &hm_shift_l LEFT_SHIFT D  &lt 3 F            &kp G                               &kp H        &lt 5 J            &hm_shift_r RIGHT_SHIFT K  &lt 4 L  &hm_r RIGHT_ALT SEMI  &kp SQT
+&td_lprn_lcbr  &hm_l LGUI Z  &kp X    &kp C                     &hm_lctrl LCTRL V  &kp B           &kp C_MUTE  &tog 1  &kp N        &hm_rctrl RCTRL M  &kp COMMA                  &kp DOT  &hm_r RGUI SLASH      &td_rprn_rcbr
+&kp LALT       &none         &none    &lt_nav 5 BSPC            &lt 4 TAB          &lt 5 C_REPEAT                      &lt 5 SPACE  &lt 4 ENTER        &lt_nav 2 DELETE           &none    &none                 &none
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         canary_layer {
@@ -324,10 +347,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp W         &kp L    &kp Y                     &kp P              &kp B                           &kp Z        &kp F              &kp O                      &kp U      &kp SQT            &kp BACKSLASH
-&kp BACKSPACE  &kp C         &lt 4 R  &hm_shift_l LEFT_SHIFT S  &lt 3 T            &kp G                           &kp M        &lt 5 N            &hm_shift_r RIGHT_SHIFT E  &lt 4 I    &hm_r RIGHT_ALT A  &td_scln_sqt
-&td_lprn_lcbr  &hm_l LGUI Q  &kp J    &kp V                     &hm_lctrl LCTRL D  &kp K           &trans  &trans  &kp X        &hm_rctrl RCTRL H  &td_slsh_scln              &kp COMMA  &hm_r RGUI DOT     &td_rprn_rcbr
-&none          &none         &none    &lt_nav 5 BSPC            &lt 4 TAB          &lt 5 C_REPEAT                  &lt 5 SPACE  &lt 4 ENTER        &lt_nav 2 DELETE           &none      &none              &none
+&kp GRAVE      &kp W         &kp L    &kp Y                     &kp P              &kp B                   &kp Z   &kp F              &kp O                      &kp U      &kp SQT            &kp BACKSLASH
+&kp BACKSPACE  &kp C         &lt 4 R  &hm_shift_l LEFT_SHIFT S  &lt 3 T            &kp G                   &kp M   &lt 5 N            &hm_shift_r RIGHT_SHIFT E  &lt 4 I    &hm_r RIGHT_ALT A  &kp SEMICOLON
+&trans         &hm_l LGUI Q  &kp J    &kp V                     &hm_lctrl LCTRL D  &kp K   &trans  &trans  &kp X   &hm_rctrl RCTRL H  &kp SLASH                  &kp COMMA  &hm_r RGUI DOT     &trans
+&trans         &trans        &trans   &trans                    &trans             &trans                  &trans  &trans             &trans                     &trans     &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -365,10 +388,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans       &none         &none  &none       &none   &none                      &kp PLUS   &kp N7  &kp N8   &kp N9  &kp ASTRK  &kp BSPC
-&kp LG(TAB)  &none         &none  &kp LSHIFT  &none   &none                      &kp COMMA  &kp N4  &kp N5   &kp N6  &kp SLASH  &none
-&trans       &kp LEFT_GUI  &none  &none       &none   &none      &trans  &trans  &kp MINUS  &kp N1  &kp N2   &kp N3  &kp SLASH  &kp ENTER
-&none        &none         &none  &none       &trans  &kp ENTER                  &kp TAB    &kp N0  &kp DOT  &none   &none      &none
+&trans  &kp N3  &kp N2  &kp N1  &none   &none                      &kp PLUS   &kp N7  &kp N8   &kp N9  &kp ASTRK  &kp BSPC
+&trans  &kp N6  &kp N5  &kp N4  &none   &none                      &kp COMMA  &kp N4  &kp N5   &kp N6  &kp SLASH  &none
+&trans  &kp N9  &kp N8  &kp N7  &none   &none      &trans  &trans  &kp MINUS  &kp N1  &kp N2   &kp N3  &kp SLASH  &kp ENTER
+&none   &none   &none   &none   &trans  &kp ENTER                  &kp TAB    &kp N0  &kp DOT  &none   &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
