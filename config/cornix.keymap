@@ -225,23 +225,29 @@
             bindings = <&sk LSHFT>;
 
             repeat {
-                trigger-keys = <A B C D E F G H I J K L M N O P Q R S T V W X Y Z>;
+                trigger-keys = <A B C D E F G H I J K L M N O Q R S T V W X Y Z>;
                 bindings = <&key_repeat>;
-                max-prior-idle-ms = <350>;
+                max-prior-idle-ms = <400>;
                 strict-modifiers;
             };
 
             arrow {
                 trigger-keys = <MINUS EQUAL>;
                 bindings = <&kp GT>;
-                max-prior-idle-ms = <300>;
+                max-prior-idle-ms = <400>;
             };
 
             u_i {
                 trigger-keys = <U>;
                 bindings = <&kp I>;
-                max-prior-idle-ms = <300>;
+                max-prior-idle-ms = <400>;
             };
+
+            p_t {
+                trigger-keys = <P>;
+                bindings = <&kp T>;
+                max-prior-idle-ms = <400>;
+            }
         };
     };
 
@@ -429,7 +435,7 @@
 &kp ESC  &kp GRAVE  &kp ASTRK  &kp LT    &kp GT     &kp UNDER                    &kp DOLLAR  &kp LBRC              &kp RBRC               &kp CARET  &none     &none
 &none    &kp EXCL   &kp DQT    &kp FSLH  &kp MINUS  &kp PLUS                     &kp HASH    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp AMPS  &none
 &none    &kp TILDE  &kp PLUS   &kp LBKT  &kp RBKT   &kp PERCENT  &trans  &trans  &kp AT      &kp FSLH              &kp PIPE               &kp BSLH   &none     &none
-&none    &none      &none      &none     &none      &none                        &none       &none                 &none                  &none      &none     &none
+&none    &none      &none      &trans     &trans      &trans                        &trans       &trans                 &trans                  &none      &none     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
