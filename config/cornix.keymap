@@ -247,7 +247,7 @@
                 trigger-keys = <P>;
                 bindings = <&kp T>;
                 max-prior-idle-ms = <400>;
-            }
+            };
         };
     };
 
