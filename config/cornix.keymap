@@ -335,6 +335,11 @@
             bindings = <&kp BSPC>;
             key-positions = <10 11>;
         };
+
+        combo_test {
+            bindings = <&tog TEST>;
+            key-positions = <47 48 49>
+        }
     };
 
     macros {
@@ -396,9 +401,9 @@
             display-name = "Test";
             bindings = <
 &kp GRAVE      &kp Q        &kp W    &kp E              &kp R            &kp T                              &kp Y        &kp U            &kp I              &kp O    &kp P            &kp BSLH
-&kp BACKSPACE  &kp A        &lt SYM S  &hm_shift_l F15 D  &lt NUM F          &kp G                              &kp H        &lt WIN J          &hm_shift_r F15 K  &lt SYM L  &hm_r F14 SEMI   &kp SQT
-&td_lprn_lcbr  &hm_l F13 Z  &kp X    &kp C              &hm_lctrl F16 V  &kp B          &kp C_MUTE  &tog 1  &kp N        &hm_rctrl F16 M  &kp COMMA          &kp DOT  &hm_r F13 SLASH  &td_rprn_rcbr
-&kp F14        &none        &none    &lt_nav WIN BSPC     &lt SYM TAB        &shift_repeat                      &lt WIN SPACE  &lt SYM ENTER      &lt_nav NAV DELETE   &none    &none            &none
+&kp BACKSPACE  &kp A        &lt SYM S  &hm_shift_l KP_ASTERISK D  &lt NUM F          &kp G                              &kp H        &lt WIN J          &hm_shift_r KP_ASTERISK K  &lt SYM L  &hm_r KP_MINUS SEMI   &kp SQT
+&td_lprn_lcbr  &hm_l KP_PLUS Z  &kp X    &kp C              &hm_lctrl KP_SLASH V  &kp B          &kp C_MUTE  &tog CANARY  &kp N        &hm_rctrl KP_SLASH M  &kp COMMA          &kp DOT  &hm_r KP_PLUS SLASH  &td_rprn_rcbr
+&kp KP_MINUS        &none        &none    &lt_nav WIN BSPC     &lt SYM TAB        &shift_repeat                      &lt WIN SPACE  &lt SYM ENTER      &lt_nav NAV DELETE   &none    &none            &none
             >;
 
             sensor-bindings =
