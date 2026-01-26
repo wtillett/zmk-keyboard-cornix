@@ -7,6 +7,7 @@
 #include "cornix.dtsi"
 
 &kscan0 {
+    wakeup-source;
     // Right side has different row pins: [P1_09, P0_28, P0_03, P1_10]
     row-gpios
         = <&gpio1 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Row 0
