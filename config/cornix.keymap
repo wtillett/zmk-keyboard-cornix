@@ -18,7 +18,7 @@
 #define HM_PRIOR_IDLE 70
 #define BASE 0
 #define CANARY 1
-#define TEXT 2
+#define TEST 2
 #define NAV 3
 #define NUM 4
 #define SYM 5
@@ -338,8 +338,8 @@
 
         combo_test {
             bindings = <&tog TEST>;
-            key-positions = <47 48 49>
-        }
+            key-positions = <47 48 49>;
+        };
     };
 
     macros {
