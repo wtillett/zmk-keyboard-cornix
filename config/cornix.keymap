@@ -223,7 +223,7 @@
             #binding-cells = <0>;
             bindings = <&sk LSHFT>, <&caps_word>;
             mods = <(MOD_LSFT)>;
-        }
+        };
 
         // Adaptive Keys
 
