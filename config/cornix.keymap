@@ -18,13 +18,12 @@
 #define HM_PRIOR_IDLE 50
 #define BASE 0
 #define CANARY 1
-#define TEST 2
-#define NAV 3
-#define NUM 4
-#define SYM 5
-#define WIN 6
-#define GAME 7
-#define DEBUG 8
+#define NAV 2
+#define NUM 3
+#define SYM 4
+#define WIN 5
+#define GAME 6
+#define DEBUG 7
 
 // https://github.com/urob/zmk-config/tree/main#timeless-homerow-mods
 
@@ -374,7 +373,7 @@
 
             bindings = <
 &kp GRAVE      &kp Q         &kp W    &kp E                     &kp R              &kp T                               &kp Y        &kp U              &kp I                      &kp O    &kp P                 &kp BSLH
-&kp BACKSPACE  &kp A         &lt SYM S  &hm_shift_l LEFT_SHIFT D  &lt NUM F            &kp G                               &kp H        &lt WIN J            &hm_shift_r RIGHT_SHIFT K  &lt SYM L  &hm_r RIGHT_ALT SEMI  &kp SQT
+&kp BACKSPACE  &kp A         &lt SYM S  &hm_shift_l LSHFT D  &lt NUM F            &kp G                               &kp H        &lt WIN J            &hm_shift_r RIGHT_SHIFT K  &lt SYM L  &hm_r RIGHT_ALT SEMI  &kp SQT
 &td_lprn_lcbr  &hm_l LGUI Z  &kp X    &kp C                     &hm_lctrl LCTRL V  &kp B           &kp C_MUTE  &tog CANARY  &kp N        &hm_rctrl RCTRL M  &kp COMMA                  &kp DOT  &hm_r RGUI SLASH      &td_rprn_rcbr
 &kp LALT       &none         &none    &lt_nav WIN BSPC            &lt SYM TAB          &smart_shift                      &lt WIN SPACE  &lt SYM ENTER        &lt_nav NAV DELETE           &none    &none                 &none
             >;
@@ -402,20 +401,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-        };
-
-        Test_layer {
-            display-name = "Test";
-            bindings = <
-&kp GRAVE      &kp Q        &kp W    &kp E              &kp R            &kp T                              &kp Y        &kp U            &kp I              &kp O    &kp P            &kp BSLH
-&kp BACKSPACE  &kp A        &lt SYM S  &hm_shift_l KP_ASTERISK D  &lt NUM F          &kp G                              &kp H        &lt WIN J          &hm_shift_r KP_ASTERISK K  &lt SYM L  &hm_r KP_MINUS SEMI   &kp SQT
-&td_lprn_lcbr  &hm_l KP_PLUS Z  &kp X    &kp C              &hm_lctrl KP_SLASH V  &kp B          &kp C_MUTE  &tog CANARY  &kp N        &hm_rctrl KP_SLASH M  &kp COMMA          &kp DOT  &hm_r KP_PLUS SLASH  &td_rprn_rcbr
-&kp KP_MINUS        &none        &none    &lt_nav WIN BSPC     &lt SYM TAB        &shift_repeat                      &lt WIN SPACE  &lt SYM ENTER      &lt_nav NAV DELETE   &none    &none            &none
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         Nav_layer {
