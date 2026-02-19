@@ -409,8 +409,6 @@ layers:
   - {type: held alternate}
   - ''
 combos:
-- p: [28, 33]
-  k: $$mdi:alpha-w-box$$
 - p: [29, 32]
   k: $$mdi:keyboard-caps$$
 - p: [0, 1]
@@ -423,12 +421,6 @@ combos:
   k: Ctl+V
 - p: [0, 11]
   k: {t: Game, h: toggle}
-- p: [34, 35]
-  k: ;
-- p: [34, 33]
-  k: '"'
-- p: [1, 2, 3, 4, 7, 8, 9, 10]
-  k: {t: Canary, h: toggle}
 - p: [33, 34, 35]
   k: {t: Num, h: toggle}
 - p: [40, 39]
