@@ -21,9 +21,9 @@ layers:
   - G
   - H
   - {t: J, h: Mouse}
-  - {t: K, h: RIGHT SHIFT}
+  - {t: K, h: '$$phosphor:regular/arrow-fat-up$$'}
   - {t: L, h: Symbol}
-  - {t: ;, h: RIGHT ALT}
+  - {t: ;, h: '$$phosphor:regular/option$$'}
   - ''''
   - ( {
   - {t: Z, h: '$$phosphor:regular/windows-logo$$'}
@@ -67,14 +67,14 @@ layers:
   - $$mdi:backspace-outline$$
   - C
   - {t: R, h: Symbol}
-  - {t: S, h: LEFT SHIFT}
+  - {t: S, h: '$$phosphor:regular/arrow-fat-up$$'}
   - {t: T, h: Num}
   - G
   - M
   - {t: N, h: Mouse}
-  - {t: E, h: RIGHT SHIFT}
+  - {t: E, h: '$$phosphor:regular/arrow-fat-up$$'}
   - {t: I, h: Symbol}
-  - {t: A, h: RIGHT ALT}
+  - {t: A, h: '$$phosphor:regular/option$$'}
   - ;
   - {t: ▽, type: trans}
   - {t: Q, h: '$$phosphor:regular/windows-logo$$'}
@@ -111,20 +111,20 @@ layers:
   - F5
   - HOME
   - PAGE UP
-  - UP ARROW
+  - $$phosphor:regular/arrow-up$$
   - PAGE DOWN
   - ''
   - PRINTSCREEN
   - ''
   - F6
-  - LEFT ALT
+  - $$phosphor:regular/option$$
   - $$phosphor:regular/arrow-fat-up$$
   - $$phosphor:regular/control$$
   - F7
   - END
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
+  - $$phosphor:regular/arrow-left$$
+  - $$phosphor:regular/arrow-down$$
+  - $$phosphor:regular/arrow-right$$
   - INSERT
   - ''
   - ''
@@ -192,7 +192,7 @@ layers:
   - '3'
   - /
   - $$mdi:keyboard-return$$
-  - '&bm_poc_path'
+  - BM Path
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -414,11 +414,11 @@ combos:
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
 - p: [26, 27]
-  k: Ctl+C
+  k: $$mdi:content-copy$$
 - p: [26, 28]
-  k: Ctl+X
+  k: $$mdi:content-cut$$
 - p: [27, 28]
-  k: Ctl+V
+  k: $$mdi:content-paste$$
 - p: [0, 11]
   k: {t: Game, h: toggle}
 - p: [33, 34, 35]

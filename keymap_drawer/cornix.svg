@@ -15,6 +15,15 @@
 <svg id="mdi:bluetooth-connect">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-bluetooth-connect" viewBox="0 0 24 24"><path d="M19,10L17,12L19,14L21,12M14.88,16.29L13,18.17V14.41M13,5.83L14.88,7.71L13,9.58M17.71,7.71L12,2H11V9.58L6.41,5L5,6.41L10.59,12L5,17.58L6.41,19L11,14.41V22H12L17.71,16.29L13.41,12M7,12L5,10L3,12L5,14L7,12Z" /></svg>
 </svg>
+<svg id="mdi:content-copy">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z" /></svg>
+</svg>
+<svg id="mdi:content-cut">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-cut" viewBox="0 0 24 24"><path d="M19,3L13,9L15,11L22,4V3M12,12.5A0.5,0.5 0 0,1 11.5,12A0.5,0.5 0 0,1 12,11.5A0.5,0.5 0 0,1 12.5,12A0.5,0.5 0 0,1 12,12.5M6,20A2,2 0 0,1 4,18C4,16.89 4.9,16 6,16A2,2 0 0,1 8,18C8,19.11 7.1,20 6,20M6,8A2,2 0 0,1 4,6C4,4.89 4.9,4 6,4A2,2 0 0,1 8,6C8,7.11 7.1,8 6,8M9.64,7.64C9.87,7.14 10,6.59 10,6A4,4 0 0,0 6,2A4,4 0 0,0 2,6A4,4 0 0,0 6,10C6.59,10 7.14,9.87 7.64,9.64L10,12L7.64,14.36C7.14,14.13 6.59,14 6,14A4,4 0 0,0 2,18A4,4 0 0,0 6,22A4,4 0 0,0 10,18C10,17.41 9.87,16.86 9.64,16.36L12,14L19,21H22V20L9.64,7.64Z" /></svg>
+</svg>
+<svg id="mdi:content-paste">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-paste" viewBox="0 0 24 24"><path d="M19,20H5V4H7V7H17V4H19M12,2A1,1 0 0,1 13,3A1,1 0 0,1 12,4A1,1 0 0,1 11,3A1,1 0 0,1 12,2M19,2H14.82C14.4,0.84 13.3,0 12,0C10.7,0 9.6,0.84 9.18,2H5A2,2 0 0,0 3,4V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V4A2,2 0 0,0 19,2Z" /></svg>
+</svg>
 <svg id="mdi:keyboard-caps">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-caps" viewBox="0 0 24 24"><path d="M6,18H18V16H6M12,8.41L16.59,13L18,11.58L12,5.58L6,11.58L7.41,13L12,8.41Z" /></svg>
 </svg>
@@ -36,8 +45,20 @@
 <svg id="mdi:usb">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-usb" viewBox="0 0 24 24"><path d="M15,7V11H16V13H13V5H15L12,1L9,5H11V13H8V10.93C8.7,10.56 9.2,9.85 9.2,9C9.2,7.78 8.21,6.8 7,6.8C5.78,6.8 4.8,7.78 4.8,9C4.8,9.85 5.3,10.56 6,10.93V13A2,2 0 0,0 8,15H11V18.05C10.29,18.41 9.8,19.15 9.8,20A2.2,2.2 0 0,0 12,22.2A2.2,2.2 0 0,0 14.2,20C14.2,19.15 13.71,18.41 13,18.05V15H16A2,2 0 0,0 18,13V11H19V7H15Z" /></svg>
 </svg>
+<svg id="phosphor:regular/arrow-down">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M205.66,149.66l-72,72a8,8,0,0,1-11.32,0l-72-72a8,8,0,0,1,11.32-11.32L120,196.69V40a8,8,0,0,1,16,0V196.69l58.34-58.35a8,8,0,0,1,11.32,11.32Z"/></svg>
+</svg>
 <svg id="phosphor:regular/arrow-fat-up">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,114.34l-96-96a8,8,0,0,0-11.32,0l-96,96A8,8,0,0,0,32,128H72v80a16,16,0,0,0,16,16h80a16,16,0,0,0,16-16V128h40a8,8,0,0,0,5.66-13.66ZM176,112a8,8,0,0,0-8,8v88H88V120a8,8,0,0,0-8-8H51.31L128,35.31,204.69,112Z"/></svg>
+</svg>
+<svg id="phosphor:regular/arrow-left">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"/></svg>
+</svg>
+<svg id="phosphor:regular/arrow-right">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg>
+</svg>
+<svg id="phosphor:regular/arrow-up">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z"/></svg>
 </svg>
 <svg id="phosphor:regular/control">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M205.66,125.66a8,8,0,0,1-11.32,0L128,59.31,61.66,125.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,125.66Z"/></svg>
@@ -267,7 +288,7 @@ path.combo {
 <g transform="translate(616, 84)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">K</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 64%">RIGHT SHIFT</tspan></text>
+<use href="#phosphor:regular/arrow-fat-up" xlink:href="#phosphor:regular/arrow-fat-up" x="-6" y="12" height="12" width="12.0" class="key hold glyph phosphor:regular/arrow-fat-up"/>
 </g>
 <g transform="translate(672, 102)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -278,7 +299,7 @@ path.combo {
 <g transform="translate(728, 112)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">;</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 78%">RIGHT ALT</tspan></text>
+<use href="#phosphor:regular/option" xlink:href="#phosphor:regular/option" x="-6" y="12" height="12" width="12.0" class="key hold glyph phosphor:regular/option"/>
 </g>
 <g transform="translate(784, 112)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -417,17 +438,17 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<text x="168" y="147" class="combo tap">Ctl+C</text>
+<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="161" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-copy"/>
 </g>
 <g class="combo combopos-3">
 <path d="M196,154 l-37,0" class="combo"/>
 <path d="M196,154 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="182" y="141" width="28" height="26" class="combo"/>
-<text x="196" y="154" class="combo tap">Ctl+X</text>
+<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="189" y="147" height="14" width="14.0" class="combo tap glyph mdi:content-cut"/>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
-<text x="224" y="147" class="combo tap">Ctl+V</text>
+<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="217" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-paste"/>
 </g>
 <g class="combo combopos-5">
 <path d="M406,56 l-359,0" class="combo"/>
@@ -529,7 +550,7 @@ path.combo {
 <g transform="translate(196, 84)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">S</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 70%">LEFT SHIFT</tspan></text>
+<use href="#phosphor:regular/arrow-fat-up" xlink:href="#phosphor:regular/arrow-fat-up" x="-6" y="12" height="12" width="12.0" class="key hold glyph phosphor:regular/arrow-fat-up"/>
 </g>
 <g transform="translate(252, 98)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -554,7 +575,7 @@ path.combo {
 <g transform="translate(616, 84)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">E</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 64%">RIGHT SHIFT</tspan></text>
+<use href="#phosphor:regular/arrow-fat-up" xlink:href="#phosphor:regular/arrow-fat-up" x="-6" y="12" height="12" width="12.0" class="key hold glyph phosphor:regular/arrow-fat-up"/>
 </g>
 <g transform="translate(672, 102)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -565,7 +586,7 @@ path.combo {
 <g transform="translate(728, 112)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">A</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 78%">RIGHT ALT</tspan></text>
+<use href="#phosphor:regular/option" xlink:href="#phosphor:regular/option" x="-6" y="12" height="12" width="12.0" class="key hold glyph phosphor:regular/option"/>
 </g>
 <g transform="translate(784, 112)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -691,17 +712,17 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<text x="168" y="147" class="combo tap">Ctl+C</text>
+<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="161" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-copy"/>
 </g>
 <g class="combo combopos-3">
 <path d="M196,154 l-37,0" class="combo"/>
 <path d="M196,154 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="182" y="141" width="28" height="26" class="combo"/>
-<text x="196" y="154" class="combo tap">Ctl+X</text>
+<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="189" y="147" height="14" width="14.0" class="combo tap glyph mdi:content-cut"/>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
-<text x="224" y="147" class="combo tap">Ctl+V</text>
+<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="217" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-paste"/>
 </g>
 <g class="combo combopos-5">
 <path d="M406,56 l-359,0" class="combo"/>
@@ -773,9 +794,7 @@ path.combo {
 </g>
 <g transform="translate(616, 28)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">UP</tspan><tspan x="0" dy="1.2em">ARROW</tspan>
-</text>
+<use href="#phosphor:regular/arrow-up" xlink:href="#phosphor:regular/arrow-up" x="-7" y="-7" height="14" width="14.0" class="key tap glyph phosphor:regular/arrow-up"/>
 </g>
 <g transform="translate(672, 46)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -799,9 +818,7 @@ path.combo {
 </g>
 <g transform="translate(140, 98)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">LEFT</tspan><tspan x="0" dy="1.2em">ALT</tspan>
-</text>
+<use href="#phosphor:regular/option" xlink:href="#phosphor:regular/option" x="-7" y="-7" height="14" width="14.0" class="key tap glyph phosphor:regular/option"/>
 </g>
 <g transform="translate(196, 84)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -821,21 +838,15 @@ path.combo {
 </g>
 <g transform="translate(560, 101)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">LEFT</tspan><tspan x="0" dy="1.2em">ARROW</tspan>
-</text>
+<use href="#phosphor:regular/arrow-left" xlink:href="#phosphor:regular/arrow-left" x="-7" y="-7" height="14" width="14.0" class="key tap glyph phosphor:regular/arrow-left"/>
 </g>
 <g transform="translate(616, 84)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">DOWN</tspan><tspan x="0" dy="1.2em">ARROW</tspan>
-</text>
+<use href="#phosphor:regular/arrow-down" xlink:href="#phosphor:regular/arrow-down" x="-7" y="-7" height="14" width="14.0" class="key tap glyph phosphor:regular/arrow-down"/>
 </g>
 <g transform="translate(672, 102)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">RIGHT</tspan><tspan x="0" dy="1.2em">ARROW</tspan>
-</text>
+<use href="#phosphor:regular/arrow-right" xlink:href="#phosphor:regular/arrow-right" x="-7" y="-7" height="14" width="14.0" class="key tap glyph phosphor:regular/arrow-right"/>
 </g>
 <g transform="translate(728, 112)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -944,17 +955,17 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<text x="168" y="147" class="combo tap">Ctl+C</text>
+<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="161" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-copy"/>
 </g>
 <g class="combo combopos-3">
 <path d="M196,154 l-37,0" class="combo"/>
 <path d="M196,154 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="182" y="141" width="28" height="26" class="combo"/>
-<text x="196" y="154" class="combo tap">Ctl+X</text>
+<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="189" y="147" height="14" width="14.0" class="combo tap glyph mdi:content-cut"/>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
-<text x="224" y="147" class="combo tap">Ctl+V</text>
+<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="217" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-paste"/>
 </g>
 <g class="combo combopos-5">
 <path d="M406,56 l-359,0" class="combo"/>
@@ -1138,7 +1149,9 @@ path.combo {
 </g>
 <g transform="translate(28, 227)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;bm_poc_pa…</tspan></text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">BM</tspan><tspan x="0" dy="1.2em">Path</tspan>
+</text>
 </g>
 <g transform="translate(84, 227)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1191,17 +1204,17 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<text x="168" y="147" class="combo tap">Ctl+C</text>
+<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="161" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-copy"/>
 </g>
 <g class="combo combopos-3">
 <path d="M196,154 l-37,0" class="combo"/>
 <path d="M196,154 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="182" y="141" width="28" height="26" class="combo"/>
-<text x="196" y="154" class="combo tap">Ctl+X</text>
+<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="189" y="147" height="14" width="14.0" class="combo tap glyph mdi:content-cut"/>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
-<text x="224" y="147" class="combo tap">Ctl+V</text>
+<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="217" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-paste"/>
 </g>
 <g class="combo combopos-5">
 <path d="M406,56 l-359,0" class="combo"/>
@@ -1435,17 +1448,17 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<text x="168" y="147" class="combo tap">Ctl+C</text>
+<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="161" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-copy"/>
 </g>
 <g class="combo combopos-3">
 <path d="M196,154 l-37,0" class="combo"/>
 <path d="M196,154 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="182" y="141" width="28" height="26" class="combo"/>
-<text x="196" y="154" class="combo tap">Ctl+X</text>
+<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="189" y="147" height="14" width="14.0" class="combo tap glyph mdi:content-cut"/>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
-<text x="224" y="147" class="combo tap">Ctl+V</text>
+<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="217" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-paste"/>
 </g>
 <g class="combo combopos-5">
 <path d="M406,56 l-359,0" class="combo"/>
@@ -1713,17 +1726,17 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<text x="168" y="147" class="combo tap">Ctl+C</text>
+<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="161" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-copy"/>
 </g>
 <g class="combo combopos-3">
 <path d="M196,154 l-37,0" class="combo"/>
 <path d="M196,154 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="182" y="141" width="28" height="26" class="combo"/>
-<text x="196" y="154" class="combo tap">Ctl+X</text>
+<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="189" y="147" height="14" width="14.0" class="combo tap glyph mdi:content-cut"/>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
-<text x="224" y="147" class="combo tap">Ctl+V</text>
+<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="217" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-paste"/>
 </g>
 <g class="combo combopos-5">
 <path d="M406,56 l-359,0" class="combo"/>
@@ -1966,17 +1979,17 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<text x="168" y="147" class="combo tap">Ctl+C</text>
+<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="161" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-copy"/>
 </g>
 <g class="combo combopos-3">
 <path d="M196,154 l-37,0" class="combo"/>
 <path d="M196,154 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="182" y="141" width="28" height="26" class="combo"/>
-<text x="196" y="154" class="combo tap">Ctl+X</text>
+<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="189" y="147" height="14" width="14.0" class="combo tap glyph mdi:content-cut"/>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
-<text x="224" y="147" class="combo tap">Ctl+V</text>
+<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="217" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-paste"/>
 </g>
 <g class="combo combopos-5">
 <path d="M406,56 l-359,0" class="combo"/>
@@ -2199,17 +2212,17 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<text x="168" y="147" class="combo tap">Ctl+C</text>
+<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="161" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-copy"/>
 </g>
 <g class="combo combopos-3">
 <path d="M196,154 l-37,0" class="combo"/>
 <path d="M196,154 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="182" y="141" width="28" height="26" class="combo"/>
-<text x="196" y="154" class="combo tap">Ctl+X</text>
+<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="189" y="147" height="14" width="14.0" class="combo tap glyph mdi:content-cut"/>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
-<text x="224" y="147" class="combo tap">Ctl+V</text>
+<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="217" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-paste"/>
 </g>
 <g class="combo combopos-5">
 <path d="M406,56 l-359,0" class="combo"/>
