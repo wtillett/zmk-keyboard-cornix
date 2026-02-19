@@ -1,0 +1,20 @@
+name: Draw ZMK keymaps
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/cornix.keymap"
+      - "boards/jzf/cornix/cornix.dtsi"
+      - "keymap_drawer.config.yaml"
+
+jobs:
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write
+    with:
+      keymap_patterns: "config/cornix.keymap"
+      config_path: "keymap_drawer.config.yaml"
+      output_folder: "keymap_drawer"
+      parse_args: ""
+      draw_args: ""
