@@ -342,10 +342,6 @@
             key-positions = <10 11>;
         };
 
-        combo_test {
-            bindings = <&tog TEST>;
-            key-positions = <47 48 49>;
-        };
     };
 
     macros {
