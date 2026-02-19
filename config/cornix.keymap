@@ -272,11 +272,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_caps_word {
-            key-positions = <28 33>;
-            bindings = <&caps_word>;
-        };
-
         combo_caps_lock {
             key-positions = <29 32>;
             bindings = <&kp CAPSLOCK>;
@@ -305,21 +300,6 @@
         combo_game {
             key-positions = <0 11>;
             bindings = <&tog GAME>;
-        };
-
-        combo_semicolon {
-            key-positions = <34 35>;
-            bindings = <&kp SEMICOLON>;
-        };
-
-        combo_quote {
-            key-positions = <34 33>;
-            bindings = <&kp DOUBLE_QUOTES>;
-        };
-
-        combo_canary {
-            key-positions = <1 2 3 4 7 8 9 10>;
-            bindings = <&tog CANARY>;
         };
 
         combo_num {
