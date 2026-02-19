@@ -1,0 +1,148 @@
+parse_config:
+  preprocess: true
+  skip_binding_parsing: false
+  raw_binding_map:
+    "&caps_word": $$mdi:alpha-w-box$$
+    "&td_lprn_lcbr": "( {"
+    "&td_rprn_rcbr": ") }"
+
+    # Bluetooth
+    "&bt BT_SEL 0":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 1
+    "&bt BT_SEL 1":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 2
+    "&bt BT_SEL 2":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 3
+    "&bt BT_SEL 3":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 4
+    "&out OUT_TOG":
+      shifted: $$mdi:usb$$
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:bluetooth$$
+
+    # Modifiers
+    "&kt RSHIFT":
+      tap: $$phosphor:regular/arrow-fat-up$$
+      hold: $$mdi:toggle-switch$$
+
+  sticky_label: sticky
+  toggle_label: toggle
+  tap_toggle_label: tap-toggle
+  trans_legend:
+    t: ▽
+    type: trans
+  layer_legend_map: {}
+  mark_alternate_layer_activators: true
+
+  zmk_keycode_map:
+    # Symbols
+    EXCLAMATION: "!"
+    EXCL: "!"
+    AT_SIGN: "@"
+    AT: "@"
+    HASH: "#"
+    POUND: "#"
+    DOLLAR: $
+    DLLR: $
+    PERCENT: "%"
+    PRCNT: "%"
+    CARET: ^
+    AMPERSAND: "&"
+    AMPS: "&"
+    ASTERISK: "*"
+    ASTRK: "*"
+    STAR: "*"
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL: "="
+    PLUS: +
+    MINUS: "-"
+    UNDERSCORE: _
+    UNDER: _
+    SLASH: /
+    FSLH: /
+    QUESTION: "?"
+    QMARK: "?"
+    BACKSLASH: \
+    BSLH: \
+    PIPE: "|"
+    NON_US_BACKSLASH: \
+    PIPE2: "|"
+    NON_US_BSLH: "|"
+    SEMICOLON: ;
+    SEMI: ;
+    COLON: ":"
+    SINGLE_QUOTE: "'"
+    SQT: "'"
+    APOSTROPHE: "'"
+    APOS: "'"
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    COMMA: ","
+    LESS_THAN: <
+    LT: <
+    PERIOD: .
+    DOT: .
+    GREATER_THAN: ">"
+    GT: ">"
+    LEFT_BRACKET: "["
+    LBKT: "["
+    LEFT_BRACE: "{"
+    LBRC: "{"
+    RIGHT_BRACKET: "]"
+    RBKT: "]"
+    RIGHT_BRACE: "}"
+    RBRC: "}"
+    GRAVE: "`"
+    TILDE: "~"
+    NON_US_HASH: "#"
+    NUHS: "#"
+    TILDE2: "~"
+
+    # Modifiers
+    LCTRL: $$phosphor:regular/control$$
+    LALT: $$phosphor:regular/option$$
+    LSHIFT: $$phosphor:regular/arrow-fat-up$$
+    LSHFT: $$phosphor:regular/arrow-fat-up$$
+    LGUI: $$phosphor:regular/windows-logo$$
+    RCTRL: $$phosphor:regular/control$$
+    RALT: $$phosphor:regular/option$$
+    RSHIFT: $$phosphor:regular/arrow-fat-up$$
+    RSHFT: $$phosphor:regular/arrow-fat-up$$
+    RGUI: $$phosphor:regular/windows-logo$$
+    "RIGHT SHIFT": $$phosphor:regular/arrow-fat-up$$
+
+    # Arrows
+    UP: $$phosphor:regular/arrow-up$$
+    DOWN: $$phosphor:regular/arrow-down$$
+    LEFT: $$phosphor:regular/arrow-left$$
+    RIGHT: $$phosphor:regular/arrow-right$$
+
+    # Whitespace
+    ENTER: $$mdi:keyboard-return$$
+    ESC: $$mdi:keyboard-esc$$
+    TAB: $$mdi:keyboard-tab$$
+    SPACE: $$mdi:keyboard-space$$
+    BACKSPACE: $$mdi:backspace-outline$$
+    BSPC: $$mdi:backspace-outline$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+
+    # Locks
+    CAPSLOCK: $$mdi:keyboard-caps$$
+    CAPS: $$mdi:keyboard-caps$$
+
+  zmk_combos: {}
+  zmk_preamble: |
+    #define KEYMAP_DRAWER
+  zmk_additional_includes: ["zmk-helpers/include"]
