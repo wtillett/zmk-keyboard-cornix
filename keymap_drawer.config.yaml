@@ -5,6 +5,7 @@ parse_config:
     "&caps_word": $$mdi:alpha-w-box$$
     "&td_lprn_lcbr": "( {"
     "&td_rprn_rcbr": ") }"
+    "&bm_poc_path": "BM Path"
 
     # Bluetooth
     "&bt BT_SEL 0":
@@ -28,10 +29,10 @@ parse_config:
       tap: $$mdi:toggle-switch$$
       hold: $$mdi:bluetooth$$
 
-    # Modifiers
-    "&kt RSHIFT":
-      tap: $$phosphor:regular/arrow-fat-up$$
-      hold: $$mdi:toggle-switch$$
+    # Copy, Cut, Paste
+    "&kp LC(C)": $$mdi:content-copy$$
+    "&kp LC(X)": $$mdi:content-cut$$
+    "&kp LC(V)": $$mdi:content-paste$$
 
   sticky_label: sticky
   toggle_label: toggle
@@ -120,13 +121,16 @@ parse_config:
     RSHIFT: $$phosphor:regular/arrow-fat-up$$
     RSHFT: $$phosphor:regular/arrow-fat-up$$
     RGUI: $$phosphor:regular/windows-logo$$
-    "RIGHT SHIFT": $$phosphor:regular/arrow-fat-up$$
 
     # Arrows
     UP: $$phosphor:regular/arrow-up$$
     DOWN: $$phosphor:regular/arrow-down$$
     LEFT: $$phosphor:regular/arrow-left$$
     RIGHT: $$phosphor:regular/arrow-right$$
+    UP_ARROW: $$phosphor:regular/arrow-up$$
+    DOWN_ARROW: $$phosphor:regular/arrow-down$$
+    LEFT_ARROW: $$phosphor:regular/arrow-left$$
+    RIGHT_ARROW: $$phosphor:regular/arrow-right$$
 
     # Whitespace
     ENTER: $$mdi:keyboard-return$$
