@@ -363,21 +363,31 @@ layers:
 combos:
 - p: [29, 32]
   k: $$mdi:keyboard-caps$$
+  l: [Base, Canary]
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
+  l: [Base, Canary, Game]
 - p: [26, 27]
   k: $$mdi:content-copy$$
+  l: [Base, Canary]
 - p: [26, 28]
   k: $$mdi:content-cut$$
+  l: [Base, Canary]
 - p: [27, 28]
   k: $$mdi:content-paste$$
+  l: [Base, Canary]
 - p: [0, 11]
   k: Game
+  l: [Base, Canary, Game]
 - p: [33, 34, 35]
   k: Num
+  l: [Base, Canary, Num]
 - p: [40, 39]
   k: Debug
+  l: [Base, Canary]
 - p: [48, 47]
   k: Debug
+  l: [Base, Canary]
 - p: [10, 11]
   k: $$mdi:backspace-outline$$
+  l: [Base, Canary]

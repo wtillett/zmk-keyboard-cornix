@@ -980,58 +980,6 @@ path.combo {
 <g transform="translate(784, 227)" class="key keypos-49">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g class="combo combopos-0">
-<path d="M406,171 l-79,0" class="combo"/>
-<path d="M406,171 l79,0" class="combo"/>
-<rect rx="6" ry="6" x="392" y="158" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-caps" xlink:href="#mdi:keyboard-caps" x="399" y="164" height="14" width="14.0" class="combo tap glyph mdi:keyboard-caps"/>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="42" y="43" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="49" y="49" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="161" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-copy"/>
-</g>
-<g class="combo combopos-3">
-<path d="M196,154 l-37,0" class="combo"/>
-<path d="M196,154 l37,0" class="combo"/>
-<rect rx="6" ry="6" x="182" y="141" width="28" height="26" class="combo"/>
-<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="189" y="147" height="14" width="14.0" class="combo tap glyph mdi:content-cut"/>
-</g>
-<g class="combo combopos-4">
-<rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
-<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="217" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-paste"/>
-</g>
-<g class="combo combopos-5">
-<path d="M406,56 l-359,0" class="combo"/>
-<path d="M406,56 l359,0" class="combo"/>
-<rect rx="6" ry="6" x="392" y="43" width="28" height="26" class="combo"/>
-<a href="#Game">
-<text x="406" y="56" class="combo tap layer-activator">Game</text>
-</a></g>
-<g class="combo combopos-6">
-<path d="M616,152 l-37,3" class="combo"/>
-<path d="M616,152 l37,4" class="combo"/>
-<rect rx="6" ry="6" x="602" y="139" width="28" height="26" class="combo"/>
-<a href="#Num">
-<text x="616" y="152" class="combo tap layer-activator">Num</text>
-</a></g>
-<g class="combo combopos-7">
-<rect rx="6" ry="6" x="98" y="207" width="28" height="26" class="combo"/>
-<a href="#Debug">
-<text x="112" y="220" class="combo tap layer-activator">Debug</text>
-</a></g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="686" y="209" width="28" height="26" class="combo"/>
-<a href="#Debug">
-<text x="700" y="222" class="combo tap layer-activator">Debug</text>
-</a></g>
-<g class="combo combopos-9">
-<rect rx="6" ry="6" x="742" y="43" width="28" height="26" class="combo"/>
-<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="749" y="49" height="14" width="14.0" class="combo tap glyph mdi:backspace-outline"/>
-</g>
 </g>
 </g>
 <g transform="translate(30, 1049)" class="layer-Num">
@@ -1227,57 +1175,12 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g class="combo combopos-0">
-<path d="M406,171 l-79,0" class="combo"/>
-<path d="M406,171 l79,0" class="combo"/>
-<rect rx="6" ry="6" x="392" y="158" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-caps" xlink:href="#mdi:keyboard-caps" x="399" y="164" height="14" width="14.0" class="combo tap glyph mdi:keyboard-caps"/>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="42" y="43" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="49" y="49" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="161" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-copy"/>
-</g>
-<g class="combo combopos-3">
-<path d="M196,154 l-37,0" class="combo"/>
-<path d="M196,154 l37,0" class="combo"/>
-<rect rx="6" ry="6" x="182" y="141" width="28" height="26" class="combo"/>
-<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="189" y="147" height="14" width="14.0" class="combo tap glyph mdi:content-cut"/>
-</g>
-<g class="combo combopos-4">
-<rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
-<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="217" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-paste"/>
-</g>
-<g class="combo combopos-5">
-<path d="M406,56 l-359,0" class="combo"/>
-<path d="M406,56 l359,0" class="combo"/>
-<rect rx="6" ry="6" x="392" y="43" width="28" height="26" class="combo"/>
-<a href="#Game">
-<text x="406" y="56" class="combo tap layer-activator">Game</text>
-</a></g>
-<g class="combo combopos-6">
 <path d="M616,152 l-37,3" class="combo"/>
 <path d="M616,152 l37,4" class="combo"/>
 <rect rx="6" ry="6" x="602" y="139" width="28" height="26" class="combo"/>
 <a href="#Num">
 <text x="616" y="152" class="combo tap layer-activator">Num</text>
 </a></g>
-<g class="combo combopos-7">
-<rect rx="6" ry="6" x="98" y="207" width="28" height="26" class="combo"/>
-<a href="#Debug">
-<text x="112" y="220" class="combo tap layer-activator">Debug</text>
-</a></g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="686" y="209" width="28" height="26" class="combo"/>
-<a href="#Debug">
-<text x="700" y="222" class="combo tap layer-activator">Debug</text>
-</a></g>
-<g class="combo combopos-9">
-<rect rx="6" ry="6" x="742" y="43" width="28" height="26" class="combo"/>
-<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="749" y="49" height="14" width="14.0" class="combo tap glyph mdi:backspace-outline"/>
-</g>
 </g>
 </g>
 <g transform="translate(30, 1399)" class="layer-Symbol">
@@ -1462,58 +1365,6 @@ path.combo {
 <g transform="translate(784, 227)" class="key keypos-49">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g class="combo combopos-0">
-<path d="M406,171 l-79,0" class="combo"/>
-<path d="M406,171 l79,0" class="combo"/>
-<rect rx="6" ry="6" x="392" y="158" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-caps" xlink:href="#mdi:keyboard-caps" x="399" y="164" height="14" width="14.0" class="combo tap glyph mdi:keyboard-caps"/>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="42" y="43" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="49" y="49" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="161" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-copy"/>
-</g>
-<g class="combo combopos-3">
-<path d="M196,154 l-37,0" class="combo"/>
-<path d="M196,154 l37,0" class="combo"/>
-<rect rx="6" ry="6" x="182" y="141" width="28" height="26" class="combo"/>
-<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="189" y="147" height="14" width="14.0" class="combo tap glyph mdi:content-cut"/>
-</g>
-<g class="combo combopos-4">
-<rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
-<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="217" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-paste"/>
-</g>
-<g class="combo combopos-5">
-<path d="M406,56 l-359,0" class="combo"/>
-<path d="M406,56 l359,0" class="combo"/>
-<rect rx="6" ry="6" x="392" y="43" width="28" height="26" class="combo"/>
-<a href="#Game">
-<text x="406" y="56" class="combo tap layer-activator">Game</text>
-</a></g>
-<g class="combo combopos-6">
-<path d="M616,152 l-37,3" class="combo"/>
-<path d="M616,152 l37,4" class="combo"/>
-<rect rx="6" ry="6" x="602" y="139" width="28" height="26" class="combo"/>
-<a href="#Num">
-<text x="616" y="152" class="combo tap layer-activator">Num</text>
-</a></g>
-<g class="combo combopos-7">
-<rect rx="6" ry="6" x="98" y="207" width="28" height="26" class="combo"/>
-<a href="#Debug">
-<text x="112" y="220" class="combo tap layer-activator">Debug</text>
-</a></g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="686" y="209" width="28" height="26" class="combo"/>
-<a href="#Debug">
-<text x="700" y="222" class="combo tap layer-activator">Debug</text>
-</a></g>
-<g class="combo combopos-9">
-<rect rx="6" ry="6" x="742" y="43" width="28" height="26" class="combo"/>
-<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="749" y="49" height="14" width="14.0" class="combo tap glyph mdi:backspace-outline"/>
-</g>
 </g>
 </g>
 <g transform="translate(30, 1748)" class="layer-Mouse">
@@ -1697,58 +1548,6 @@ path.combo {
 </g>
 <g transform="translate(784, 227)" class="key keypos-49">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g class="combo combopos-0">
-<path d="M406,171 l-79,0" class="combo"/>
-<path d="M406,171 l79,0" class="combo"/>
-<rect rx="6" ry="6" x="392" y="158" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-caps" xlink:href="#mdi:keyboard-caps" x="399" y="164" height="14" width="14.0" class="combo tap glyph mdi:keyboard-caps"/>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="42" y="43" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="49" y="49" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="161" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-copy"/>
-</g>
-<g class="combo combopos-3">
-<path d="M196,154 l-37,0" class="combo"/>
-<path d="M196,154 l37,0" class="combo"/>
-<rect rx="6" ry="6" x="182" y="141" width="28" height="26" class="combo"/>
-<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="189" y="147" height="14" width="14.0" class="combo tap glyph mdi:content-cut"/>
-</g>
-<g class="combo combopos-4">
-<rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
-<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="217" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-paste"/>
-</g>
-<g class="combo combopos-5">
-<path d="M406,56 l-359,0" class="combo"/>
-<path d="M406,56 l359,0" class="combo"/>
-<rect rx="6" ry="6" x="392" y="43" width="28" height="26" class="combo"/>
-<a href="#Game">
-<text x="406" y="56" class="combo tap layer-activator">Game</text>
-</a></g>
-<g class="combo combopos-6">
-<path d="M616,152 l-37,3" class="combo"/>
-<path d="M616,152 l37,4" class="combo"/>
-<rect rx="6" ry="6" x="602" y="139" width="28" height="26" class="combo"/>
-<a href="#Num">
-<text x="616" y="152" class="combo tap layer-activator">Num</text>
-</a></g>
-<g class="combo combopos-7">
-<rect rx="6" ry="6" x="98" y="207" width="28" height="26" class="combo"/>
-<a href="#Debug">
-<text x="112" y="220" class="combo tap layer-activator">Debug</text>
-</a></g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="686" y="209" width="28" height="26" class="combo"/>
-<a href="#Debug">
-<text x="700" y="222" class="combo tap layer-activator">Debug</text>
-</a></g>
-<g class="combo combopos-9">
-<rect rx="6" ry="6" x="742" y="43" width="28" height="26" class="combo"/>
-<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="749" y="49" height="14" width="14.0" class="combo tap glyph mdi:backspace-outline"/>
 </g>
 </g>
 </g>
@@ -1948,57 +1747,16 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g class="combo combopos-0">
-<path d="M406,171 l-79,0" class="combo"/>
-<path d="M406,171 l79,0" class="combo"/>
-<rect rx="6" ry="6" x="392" y="158" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-caps" xlink:href="#mdi:keyboard-caps" x="399" y="164" height="14" width="14.0" class="combo tap glyph mdi:keyboard-caps"/>
-</g>
-<g class="combo combopos-1">
 <rect rx="6" ry="6" x="42" y="43" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="49" y="49" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="161" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-copy"/>
-</g>
-<g class="combo combopos-3">
-<path d="M196,154 l-37,0" class="combo"/>
-<path d="M196,154 l37,0" class="combo"/>
-<rect rx="6" ry="6" x="182" y="141" width="28" height="26" class="combo"/>
-<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="189" y="147" height="14" width="14.0" class="combo tap glyph mdi:content-cut"/>
-</g>
-<g class="combo combopos-4">
-<rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
-<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="217" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-paste"/>
-</g>
-<g class="combo combopos-5">
+<g class="combo combopos-1">
 <path d="M406,56 l-359,0" class="combo"/>
 <path d="M406,56 l359,0" class="combo"/>
 <rect rx="6" ry="6" x="392" y="43" width="28" height="26" class="combo"/>
 <a href="#Game">
 <text x="406" y="56" class="combo tap layer-activator">Game</text>
 </a></g>
-<g class="combo combopos-6">
-<path d="M616,152 l-37,3" class="combo"/>
-<path d="M616,152 l37,4" class="combo"/>
-<rect rx="6" ry="6" x="602" y="139" width="28" height="26" class="combo"/>
-<a href="#Num">
-<text x="616" y="152" class="combo tap layer-activator">Num</text>
-</a></g>
-<g class="combo combopos-7">
-<rect rx="6" ry="6" x="98" y="207" width="28" height="26" class="combo"/>
-<a href="#Debug">
-<text x="112" y="220" class="combo tap layer-activator">Debug</text>
-</a></g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="686" y="209" width="28" height="26" class="combo"/>
-<a href="#Debug">
-<text x="700" y="222" class="combo tap layer-activator">Debug</text>
-</a></g>
-<g class="combo combopos-9">
-<rect rx="6" ry="6" x="742" y="43" width="28" height="26" class="combo"/>
-<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="749" y="49" height="14" width="14.0" class="combo tap glyph mdi:backspace-outline"/>
-</g>
 </g>
 </g>
 <g transform="translate(30, 2448)" class="layer-Debug">
@@ -2174,58 +1932,6 @@ path.combo {
 </g>
 <g transform="translate(784, 227)" class="key keypos-49">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g class="combo combopos-0">
-<path d="M406,171 l-79,0" class="combo"/>
-<path d="M406,171 l79,0" class="combo"/>
-<rect rx="6" ry="6" x="392" y="158" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-caps" xlink:href="#mdi:keyboard-caps" x="399" y="164" height="14" width="14.0" class="combo tap glyph mdi:keyboard-caps"/>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="42" y="43" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="49" y="49" height="14" width="14.0" class="combo tap glyph mdi:keyboard-esc"/>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="161" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-copy"/>
-</g>
-<g class="combo combopos-3">
-<path d="M196,154 l-37,0" class="combo"/>
-<path d="M196,154 l37,0" class="combo"/>
-<rect rx="6" ry="6" x="182" y="141" width="28" height="26" class="combo"/>
-<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="189" y="147" height="14" width="14.0" class="combo tap glyph mdi:content-cut"/>
-</g>
-<g class="combo combopos-4">
-<rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
-<use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="217" y="140" height="14" width="14.0" class="combo tap glyph mdi:content-paste"/>
-</g>
-<g class="combo combopos-5">
-<path d="M406,56 l-359,0" class="combo"/>
-<path d="M406,56 l359,0" class="combo"/>
-<rect rx="6" ry="6" x="392" y="43" width="28" height="26" class="combo"/>
-<a href="#Game">
-<text x="406" y="56" class="combo tap layer-activator">Game</text>
-</a></g>
-<g class="combo combopos-6">
-<path d="M616,152 l-37,3" class="combo"/>
-<path d="M616,152 l37,4" class="combo"/>
-<rect rx="6" ry="6" x="602" y="139" width="28" height="26" class="combo"/>
-<a href="#Num">
-<text x="616" y="152" class="combo tap layer-activator">Num</text>
-</a></g>
-<g class="combo combopos-7">
-<rect rx="6" ry="6" x="98" y="207" width="28" height="26" class="combo"/>
-<a href="#Debug">
-<text x="112" y="220" class="combo tap layer-activator">Debug</text>
-</a></g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="686" y="209" width="28" height="26" class="combo"/>
-<a href="#Debug">
-<text x="700" y="222" class="combo tap layer-activator">Debug</text>
-</a></g>
-<g class="combo combopos-9">
-<rect rx="6" ry="6" x="742" y="43" width="28" height="26" class="combo"/>
-<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="749" y="49" height="14" width="14.0" class="combo tap glyph mdi:backspace-outline"/>
 </g>
 </g>
 </g>
