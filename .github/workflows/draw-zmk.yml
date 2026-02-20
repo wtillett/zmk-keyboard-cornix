@@ -19,7 +19,6 @@ jobs:
       keymap_patterns: "config/cornix.keymap"
       config_path: "keymap_drawer/config.yaml"
       output_folder: "keymap_drawer"
-      extra_keymap_yaml: "cornix:'keymap_drawer/combos.yaml'"
       parse_args: ""
       draw_args: ""
       fail_on_error: true
