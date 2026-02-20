@@ -1,4 +1,0 @@
-combos:
-  - p: [29, 32]
-    k: { t: $$mdi:keyboard-caps$$ }
-    l: [Base, Canary]

@@ -49,13 +49,12 @@ parse_config:
 
     # Misc
     "&tog CANARY": $$phosphor:regular/bird$$
+    "&kp C_MUTE": $$phosphor:regular/speaker-x$$
 
   sticky_label: ""
   toggle_label: ""
   tap_toggle_label: ""
-  trans_legend:
-    tap: $$mdi:transfer$$
-    type: trans
+  trans_legend: ""
   layer_legend_map: {}
   mark_alternate_layer_activators: true
 
@@ -161,9 +160,6 @@ parse_config:
     # Locks
     CAPSLOCK: $$mdi:keyboard-caps$$
     CAPS: $$mdi:keyboard-caps$$
-
-    # Other Miscellaneous Stuff
-    MUTE: $$phosphor:regular/speaker-x$$
 
   zmk_combos: {}
   zmk_preamble: |
