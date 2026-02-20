@@ -34,11 +34,27 @@ parse_config:
     "&kp LC(X)": $$mdi:content-cut$$
     "&kp LC(V)": $$mdi:content-paste$$
 
-  sticky_label: sticky
-  toggle_label: toggle
-  tap_toggle_label: tap-toggle
+    # Mouse
+    "&msc SCRL_UP": $$phosphor:regular/arrow-bend-left-up$$
+    "&msc SCRL_DOWN": $$phosphor:regular/arrow-bend-right-down$$
+    "&msc SCRL_LEFT": $$phosphor:regular/arrow-bend-up-left$$
+    "&msc SCRL_RIGHT": $$phosphor:regular/arrow-bend-up-right$$
+    "&mmv MOVE_UP": $$phosphor:regular/caret-double-up$$
+    "&mmv MOVE_DOWN": $$phosphor:regular/caret-double-down$$
+    "&mmv MOVE_LEFT": $$phosphor:regular/caret-double-left$$
+    "&mmv MOVE_RIGHT": $$phosphor:regular/caret-double-right$$
+    "&mkp MB1": $$phosphor:regular/mouse-left-click$$
+    "&mkp MB2": $$phosphor:regular/mouse-right-click$$
+    "&mkp MB3": $$phosphor:regular/mouse-middle-click$$
+
+    # Misc
+    "&tog CANARY": $$phosphor:regular/bird$$
+
+  sticky_label: ""
+  toggle_label: ""
+  tap_toggle_label: ""
   trans_legend:
-    t: ▽
+    tap: $$mdi:transfer$$
     type: trans
   layer_legend_map: {}
   mark_alternate_layer_activators: true
@@ -145,6 +161,9 @@ parse_config:
     # Locks
     CAPSLOCK: $$mdi:keyboard-caps$$
     CAPS: $$mdi:keyboard-caps$$
+
+    # Other Miscellaneous Stuff
+    MUTE: $$phosphor:regular/speaker-x$$
 
   zmk_combos: {}
   zmk_preamble: |

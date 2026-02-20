@@ -372,8 +372,8 @@
             bindings = <
 &kp GRAVE      &kp W         &kp L    &kp Y                     &kp P              &kp B                   &kp Z   &kp F              &kp O                      &kp U      &kp SQT            &kp BACKSLASH
 &kp BACKSPACE  &kp C         &lt SYM R  &hm_shift_l LSHFT S  &lt NUM T            &kp G                   &kp M   &lt WIN N            &hm_shift_r RSHFT E  &lt SYM I    &hm_r RALT A  &kp SEMICOLON
-&trans         &hm_l LGUI Q  &kp J    &kp V                     &hm_lctrl LCTRL D  &kp K   &trans  &trans  &kp X   &hm_rctrl RCTRL H  &kp SLASH                  &kp COMMA  &hm_r RGUI DOT     &trans
-&trans         &trans        &trans   &trans                    &trans             &trans                  &trans  &trans             &trans                     &trans     &trans             &trans
+&td_lprn_lcbr  &hm_l LGUI Q  &kp J    &kp V                     &hm_lctrl LCTRL D  &kp K   &kp C_MUTE  &tog CANARY  &kp X   &hm_rctrl RCTRL H  &kp SLASH                  &kp COMMA  &hm_r RGUI DOT     &td_rprn_rcbr
+&kp LALT       &none         &none    &lt_nav WIN BSPC            &lt SYM TAB          &smart_shift                      &lt WIN SPACE  &lt SYM ENTER        &lt_nav NAV DELETE           &none    &none                 &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -414,7 +414,7 @@
 &trans  &kp N3  &kp N2  &kp N1  &none   &none                      &kp PLUS   &kp N7  &kp N8   &kp N9  &kp ASTRK  &kp BSPC
 &trans  &kp N6  &kp N5  &kp N4  &none   &none                      &kp COMMA  &kp N4  &kp N5   &kp N6  &kp SLASH  &none
 &trans  &kp N9  &kp N8  &kp N7  &none   &none      &trans  &trans  &kp MINUS  &kp N1  &kp N2   &kp N3  &kp SLASH  &kp ENTER
-&bm_poc_path   &none   &none   &trans   &trans  &kp ENTER                  &kp TAB    &kp N0  &kp DOT  &none   &none      &none
+&bm_poc_path   &none   &none   &lt_nav WIN BSPC   &lt SYM TAB  &kp ENTER                  &kp TAB    &kp N0  &kp DOT  &none   &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -445,7 +445,7 @@
             bindings = <
 &none  &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none                            &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none            &none
 &none  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT                  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &kp RG(TAB)
-&none  &none           &none           &none           &none            &none            &trans  &trans  &none           &none           &none           &none            &none            &none
+&none  &none           &mkp MB2        &mkp MB3        &mkp MB1         &none            &trans  &trans  &none           &mkp MB1        &mkp MB3        &mkp MB2         &none            &none
 &none  &none           &none           &mkp MB2        &mkp MB3         &mkp MB1                         &mkp MB1        &mkp MB3        &mkp MB2        &none            &none            &none
             >;
 
@@ -476,7 +476,7 @@
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
             bindings = <
-&kp L  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                          &kp R        &none  &none         &none  &none  &none
+&none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                          &none        &none  &none         &none  &none  &none
 &none  &none  &none         &none         &none         &sys_reset                            &sys_reset   &none  &none         &none  &none  &none
 &none  &none  &none         &none         &none         &bootloader   &bt BT_CLR_ALL  &trans  &bootloader  &none  &none         &none  &none  &none
 &none  &none  &none         &bt BT_NXT    &none         &none                                 &none        &none  &out OUT_TOG  &none  &none  &none

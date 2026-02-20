@@ -8,3 +8,5 @@ target
 
 firmware
 /logs
+out.svg
+out.yaml
