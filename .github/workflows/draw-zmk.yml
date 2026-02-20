@@ -6,6 +6,7 @@ on:
       - "config/cornix.keymap"
       - "boards/jzf/cornix/cornix.dtsi"
       - "keymap_drawer/config.yaml"
+      - "keymap_drawer/combos.yaml"
       - ".github/workflows/draw-zmk.yml"
 
 jobs:
