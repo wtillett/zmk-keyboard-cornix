@@ -275,60 +275,61 @@
         combo_caps_lock {
             key-positions = <29 32>;
             bindings = <&kp CAPSLOCK>;
-            layers = BASE, CANARY;
+            layers = <BASE, CANARY>;
         };
 
         combo_esc {
             key-positions = <0 1>;
             bindings = <&kp ESC>;
+            layers = <BASE, CANARY, GAME>;
         };
 
         combo_copy {
             key-positions = <26 27>;
             bindings = <&kp LC(C)>;
-            layers = BASE, CANARY;
+            layers = <BASE, CANARY>;
         };
 
         combo_cut {
             key-positions = <26 28>;
             bindings = <&kp LC(X)>;
-            layers = BASE, CANARY;
+            layers = <BASE, CANARY>;
         };
 
         combo_paste {
             key-positions = <27 28>;
             bindings = <&kp LC(V)>;
-            layers = BASE, CANARY;
+            layers = <BASE, CANARY>;
         };
 
         combo_game {
             key-positions = <0 11>;
             bindings = <&tog GAME>;
-            layers = BASE, CANARY, GAME;
+            layers = <BASE, CANARY, GAME>;
         };
 
         combo_num {
             key-positions = <33 34 35>;
             bindings = <&tog NUM>;
-            layers = BASE, CANARY, NUM;
+            layers = <BASE, CANARY, NUM>;
         };
 
         combo_debug {
             bindings = <&mo DEBUG>;
             key-positions = <40 39>;
-            layers = BASE, CANARY;
+            layers = <BASE, CANARY>;
         };
 
         combo_debug_r {
             bindings = <&mo DEBUG>;
             key-positions = <48 47>;
-            layers = BASE, CANARY;
+            layers = <BASE, CANARY>;
         };
 
         combo_bspc {
             bindings = <&kp BSPC>;
             key-positions = <10 11>;
-            layers = BASE, CANARY;
+            layers = <BASE, CANARY>;
         };
 
     };
