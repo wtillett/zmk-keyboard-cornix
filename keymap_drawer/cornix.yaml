@@ -31,7 +31,7 @@ layers:
   - C
   - {t: V, h: '$$phosphor:regular/control$$'}
   - B
-  - MUTE
+  - $$phosphor:regular/speaker-x$$
   - $$phosphor:regular/bird$$
   - N
   - {t: M, h: '$$phosphor:regular/control$$'}
@@ -82,7 +82,7 @@ layers:
   - V
   - {t: D, h: '$$phosphor:regular/control$$'}
   - K
-  - MUTE
+  - $$phosphor:regular/speaker-x$$
   - $$phosphor:regular/bird$$
   - X
   - {t: H, h: '$$phosphor:regular/control$$'}
@@ -133,8 +133,6 @@ layers:
   - F10
   - F11
   - F12
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - ''
   - ''
   - ''
@@ -145,16 +143,18 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - ''
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
   - ''
   - ''
   - ''
   Num:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
   - '3'
   - '2'
   - '1'
@@ -166,7 +166,7 @@ layers:
   - '9'
   - '*'
   - $$mdi:backspace-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
   - '6'
   - '5'
   - '4'
@@ -178,14 +178,14 @@ layers:
   - '6'
   - /
   - ''
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
   - '9'
   - '8'
   - '7'
   - ''
   - ''
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
+  - ''
   - '-'
   - '1'
   - '2'
@@ -235,8 +235,8 @@ layers:
   - '['
   - ']'
   - '%'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
+  - ''
   - '@'
   - /
   - '|'
@@ -246,12 +246,12 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
+  - ''
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
   - ''
   - ''
   - ''
@@ -286,8 +286,8 @@ layers:
   - $$phosphor:regular/mouse-middle-click$$
   - $$phosphor:regular/mouse-left-click$$
   - ''
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
+  - ''
   - ''
   - $$phosphor:regular/mouse-left-click$$
   - $$phosphor:regular/mouse-middle-click$$
@@ -306,57 +306,9 @@ layers:
   - ''
   - ''
   - ''
-  Game:
-  - '`'
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - $$mdi:backspace-outline$$
-  - $$mdi:keyboard-tab$$
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - $$phosphor:regular/control$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ''''
-  - ''
-  - ''
-  - ''
-  - $$phosphor:regular/option$$
-  - $$phosphor:regular/arrow-fat-up$$
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-return$$
-  - $$phosphor:regular/windows-logo$$
-  - ''
-  - ''
-  - ''
+  Game: ['`', Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:keyboard-tab$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$phosphor:regular/control$$',
+    Z, X, C, V, B, '', '', N, M, ',', ., /, '''', '', '', '', '$$phosphor:regular/option$$', '$$phosphor:regular/arrow-fat-up$$', '$$mdi:keyboard-space$$', '$$mdi:keyboard-space$$',
+    '$$mdi:keyboard-return$$', '$$phosphor:regular/windows-logo$$', '', '', '']
   Debug:
   - ''
   - ''
@@ -389,7 +341,7 @@ layers:
   - ''
   - '&bootloader'
   - BT CLR ALL
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
   - '&bootloader'
   - ''
   - ''
