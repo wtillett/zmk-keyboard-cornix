@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: cornix}
 layers:
   Base:
-  - '`'
+  - {t: '`', s: '~'}
   - Q
   - W
   - E
@@ -12,19 +12,19 @@ layers:
   - I
   - O
   - P
-  - \
+  - {t: \, s: '|'}
   - $$mdi:backspace-outline$$
   - A
-  - {t: S, h: Symbol}
+  - {t: S, h: SYM}
   - {t: D, h: '$$phosphor:regular/arrow-fat-up$$'}
-  - {t: F, h: Num}
+  - {t: F, h: NUM}
   - G
   - H
-  - {t: J, h: Mouse}
+  - {t: J, h: WIN}
   - {t: K, h: '$$phosphor:regular/arrow-fat-up$$'}
-  - {t: L, h: Symbol}
-  - {t: ;, h: '$$phosphor:regular/option$$'}
-  - ''''
+  - {t: L, h: SYM}
+  - {t: ;, h: '$$phosphor:regular/option$$', s: ':'}
+  - {t: '''', s: '"'}
   - ( {
   - {t: Z, h: '$$phosphor:regular/windows-logo$$'}
   - X
@@ -35,24 +35,24 @@ layers:
   - $$phosphor:regular/bird$$
   - N
   - {t: M, h: '$$phosphor:regular/control$$'}
-  - ','
-  - .
-  - {t: /, h: '$$phosphor:regular/windows-logo$$'}
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, h: '$$phosphor:regular/windows-logo$$', s: '?'}
   - ) }
   - $$phosphor:regular/option$$
   - ''
   - ''
-  - {t: '$$mdi:backspace-outline$$', h: Mouse}
-  - {t: '$$mdi:keyboard-tab$$', h: Symbol}
+  - {t: '$$mdi:backspace-outline$$', h: WIN}
+  - {t: '$$mdi:keyboard-tab$$', h: SYM}
   - {t: '$$phosphor:regular/arrow-fat-up$$', s: '$$mdi:alpha-w-box$$'}
-  - {t: '$$mdi:keyboard-space$$', h: Mouse}
-  - {t: '$$mdi:keyboard-return$$', h: Symbol}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: Nav}
+  - {t: '$$mdi:keyboard-space$$', h: WIN}
+  - {t: '$$mdi:keyboard-return$$', h: SYM}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: NAV}
   - ''
   - ''
   - ''
   Canary:
-  - '`'
+  - {t: '`', s: '~'}
   - W
   - L
   - Y
@@ -62,20 +62,20 @@ layers:
   - F
   - O
   - U
-  - ''''
-  - \
+  - {t: '''', s: '"'}
+  - {t: \, s: '|'}
   - $$mdi:backspace-outline$$
   - C
-  - {t: R, h: Symbol}
+  - {t: R, h: SYM}
   - {t: S, h: '$$phosphor:regular/arrow-fat-up$$'}
-  - {t: T, h: Num}
+  - {t: T, h: NUM}
   - G
   - M
-  - {t: N, h: Mouse}
+  - {t: N, h: WIN}
   - {t: E, h: '$$phosphor:regular/arrow-fat-up$$'}
-  - {t: I, h: Symbol}
+  - {t: I, h: SYM}
   - {t: A, h: '$$phosphor:regular/option$$'}
-  - ;
+  - {t: ;, s: ':'}
   - ( {
   - {t: Q, h: '$$phosphor:regular/windows-logo$$'}
   - J
@@ -86,19 +86,19 @@ layers:
   - $$phosphor:regular/bird$$
   - X
   - {t: H, h: '$$phosphor:regular/control$$'}
-  - /
-  - ','
-  - {t: ., h: '$$phosphor:regular/windows-logo$$'}
+  - {t: /, s: '?'}
+  - {t: ',', s: <}
+  - {t: ., h: '$$phosphor:regular/windows-logo$$', s: '>'}
   - ) }
   - $$phosphor:regular/option$$
   - ''
   - ''
-  - {t: '$$mdi:backspace-outline$$', h: Mouse}
-  - {t: '$$mdi:keyboard-tab$$', h: Symbol}
+  - {t: '$$mdi:backspace-outline$$', h: WIN}
+  - {t: '$$mdi:keyboard-tab$$', h: SYM}
   - {t: '$$phosphor:regular/arrow-fat-up$$', s: '$$mdi:alpha-w-box$$'}
-  - {t: '$$mdi:keyboard-space$$', h: Mouse}
-  - {t: '$$mdi:keyboard-return$$', h: Symbol}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: Nav}
+  - {t: '$$mdi:keyboard-space$$', h: WIN}
+  - {t: '$$mdi:keyboard-return$$', h: SYM}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: NAV}
   - ''
   - ''
   - ''
@@ -109,23 +109,23 @@ layers:
   - F3
   - F4
   - F5
-  - HOME
-  - PAGE UP
+  - Home
+  - Page Up
   - $$phosphor:regular/arrow-up$$
-  - PAGE DOWN
+  - Page Down
   - ''
-  - PRINTSCREEN
+  - $$mdi:monitor-screenshot$$
   - ''
   - F6
   - $$phosphor:regular/option$$
   - $$phosphor:regular/arrow-fat-up$$
   - $$phosphor:regular/control$$
   - F7
-  - END
+  - End
   - $$phosphor:regular/arrow-left$$
   - $$phosphor:regular/arrow-down$$
   - $$phosphor:regular/arrow-right$$
-  - INSERT
+  - Insert
   - ''
   - ''
   - F8
@@ -133,7 +133,7 @@ layers:
   - F10
   - F11
   - F12
-  - ''
+  - $$phosphor:regular/speaker-x$$
   - ''
   - ''
   - ''
@@ -155,58 +155,58 @@ layers:
   - ''
   Num:
   - ''
-  - '3'
-  - '2'
-  - '1'
+  - {t: '3', s: '#'}
+  - {t: '2', s: '@'}
+  - {t: '1', s: '!'}
   - ''
   - ''
   - +
-  - '7'
-  - '8'
-  - '9'
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
   - '*'
   - $$mdi:backspace-outline$$
   - ''
-  - '6'
-  - '5'
-  - '4'
+  - {t: '6', s: ^}
+  - {t: '5', s: '%'}
+  - {t: '4', s: $}
   - {type: held}
   - ''
-  - ','
-  - '4'
-  - '5'
-  - '6'
-  - /
+  - {t: ',', s: <}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: /, s: '?'}
   - ''
   - ''
-  - '9'
-  - '8'
-  - '7'
+  - {t: '9', s: (}
+  - {t: '8', s: '*'}
+  - {t: '7', s: '&'}
   - ''
   - ''
+  - $$phosphor:regular/speaker-x$$
   - ''
-  - ''
-  - '-'
-  - '1'
-  - '2'
-  - '3'
-  - /
+  - {t: '-', s: _}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: /, s: '?'}
   - $$mdi:keyboard-return$$
   - BM Path
   - ''
   - ''
-  - {t: '$$mdi:backspace-outline$$', h: Mouse}
-  - {t: '$$mdi:keyboard-tab$$', h: Symbol}
+  - {t: '$$mdi:backspace-outline$$', h: WIN}
+  - {t: '$$mdi:keyboard-tab$$', h: SYM}
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-tab$$
-  - '0'
-  - .
+  - {t: '0', s: )}
+  - {t: ., s: '>'}
   - ''
   - ''
   - ''
   Symbol:
   - $$mdi:keyboard-esc$$
-  - '`'
+  - {t: '`', s: '~'}
   - '*'
   - <
   - '>'
@@ -220,37 +220,37 @@ layers:
   - ''
   - '!'
   - {t: '"', type: held}
-  - /
-  - {t: '-', type: held alternate}
+  - {t: /, s: '?'}
+  - {t: '-', s: _}
   - +
   - '#'
   - (
   - )
-  - {t: '=', type: held alternate}
+  - {t: '=', s: +}
   - '&'
   - ''
   - ''
   - '~'
   - +
-  - '['
-  - ']'
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - '%'
-  - ''
+  - $$phosphor:regular/speaker-x$$
   - ''
   - '@'
-  - /
+  - {t: /, s: '?'}
   - '|'
-  - \
+  - {t: \, s: '|'}
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - {type: held alternate}
   - ''
   - ''
-  - {type: held alternate}
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -272,7 +272,7 @@ layers:
   - $$phosphor:regular/arrow-bend-up-left$$
   - $$phosphor:regular/caret-double-left$$
   - $$phosphor:regular/caret-double-down$$
-  - {t: '$$phosphor:regular/caret-double-right$$', type: held alternate}
+  - $$phosphor:regular/caret-double-right$$
   - $$phosphor:regular/arrow-bend-up-right$$
   - $$phosphor:regular/arrow-bend-up-left$$
   - {t: '$$phosphor:regular/caret-double-left$$', type: held}
@@ -286,7 +286,7 @@ layers:
   - $$phosphor:regular/mouse-middle-click$$
   - $$phosphor:regular/mouse-left-click$$
   - ''
-  - ''
+  - $$phosphor:regular/speaker-x$$
   - ''
   - ''
   - $$phosphor:regular/mouse-left-click$$
@@ -297,18 +297,66 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$phosphor:regular/mouse-right-click$$', type: held alternate}
+  - $$phosphor:regular/mouse-right-click$$
   - $$phosphor:regular/mouse-middle-click$$
   - $$phosphor:regular/mouse-left-click$$
-  - {t: '$$phosphor:regular/mouse-left-click$$', type: held alternate}
+  - $$phosphor:regular/mouse-left-click$$
   - $$phosphor:regular/mouse-middle-click$$
   - $$phosphor:regular/mouse-right-click$$
   - ''
   - ''
   - ''
-  Game: ['`', Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:keyboard-tab$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$phosphor:regular/control$$',
-    Z, X, C, V, B, '', '', N, M, ',', ., /, '''', '', '', '', '$$phosphor:regular/option$$', '$$phosphor:regular/arrow-fat-up$$', '$$mdi:keyboard-space$$', '$$mdi:keyboard-space$$',
-    '$$mdi:keyboard-return$$', '$$phosphor:regular/windows-logo$$', '', '', '']
+  Game:
+  - {t: '`', s: '~'}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - $$mdi:backspace-outline$$
+  - $$mdi:keyboard-tab$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - .
+  - $$phosphor:regular/control$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$phosphor:regular/speaker-x$$
+  - ''
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - .
+  - ''
+  - ''
+  - ''
+  - $$phosphor:regular/option$$
+  - $$phosphor:regular/arrow-fat-up$$
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-return$$
+  - $$phosphor:regular/windows-logo$$
+  - ''
+  - ''
+  - ''
   Debug:
   - ''
   - ''
@@ -357,13 +405,15 @@ layers:
   - ''
   - ''
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
-  - {type: held alternate}
-  - {type: held alternate}
+  - ''
+  - ''
   - ''
 combos:
 - p: [29, 32]
   k: $$mdi:keyboard-caps$$
   l: [Base, Canary]
+  a: bottom
+  o: 0.125
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
   l: [Base, Canary, Game]
@@ -373,15 +423,18 @@ combos:
 - p: [26, 28]
   k: $$mdi:content-cut$$
   l: [Base, Canary]
+  a: bottom
 - p: [27, 28]
   k: $$mdi:content-paste$$
   l: [Base, Canary]
 - p: [0, 11]
   k: Game
   l: [Base, Canary, Game]
+  hidden: true
 - p: [33, 34, 35]
-  k: Num
+  k: NUM
   l: [Base, Canary, Num]
+  a: bottom
 - p: [40, 39]
   k: Debug
   l: [Base, Canary]
