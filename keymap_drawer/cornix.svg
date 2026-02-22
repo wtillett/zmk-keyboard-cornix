@@ -724,21 +724,21 @@ path.combo {
 <use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="229" y="199" height="22" width="22.0" class="combo tap glyph mdi:content-copy"/>
 </g>
 <g class="combo combopos-3">
-<path d="M280,261 h-74 a6.0,6.0 0 0 1 -6.0,-6.0 v-8" class="combo"/>
-<path d="M280,261 h74 a6.0,6.0 0 0 0 6.0,-6.0 v-8" class="combo"/>
-<rect rx="4" ry="4" x="265" y="246" width="30" height="30" class="combo"/>
-<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="269" y="250" height="22" width="22.0" class="combo tap glyph mdi:content-cut"/>
+<path d="M280,263 h-74 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
+<path d="M280,263 h74 a6.0,6.0 0 0 0 6.0,-6.0 v-10" class="combo"/>
+<rect rx="4" ry="4" x="265" y="248" width="30" height="30" class="combo"/>
+<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="269" y="252" height="22" width="22.0" class="combo tap glyph mdi:content-cut"/>
 </g>
 <g class="combo combopos-4">
 <rect rx="4" ry="4" x="305" y="195" width="30" height="30" class="combo"/>
 <use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="309" y="199" height="22" width="22.0" class="combo tap glyph mdi:content-paste"/>
 </g>
 <g class="combo combopos-6">
-<path d="M880,267 h-74 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
-<path d="M880,267 l0,-40" class="combo"/>
-<path d="M880,267 h74 a6.0,6.0 0 0 0 6.0,-6.0 v-8" class="combo"/>
-<rect rx="4" ry="4" x="865" y="252" width="30" height="30" class="combo"/>
-<text x="880" y="267" class="combo tap">NUM</text>
+<path d="M880,269 h-74 a6.0,6.0 0 0 1 -6.0,-6.0 v-12" class="combo"/>
+<path d="M880,269 l0,-42" class="combo"/>
+<path d="M880,269 h74 a6.0,6.0 0 0 0 6.0,-6.0 v-10" class="combo"/>
+<rect rx="4" ry="4" x="865" y="254" width="30" height="30" class="combo"/>
+<text x="880" y="269" class="combo tap">NUM</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="4" ry="4" x="145" y="299" width="30" height="30" class="combo"/>
@@ -997,21 +997,21 @@ path.combo {
 <use href="#mdi:content-copy" xlink:href="#mdi:content-copy" x="229" y="199" height="22" width="22.0" class="combo tap glyph mdi:content-copy"/>
 </g>
 <g class="combo combopos-3">
-<path d="M280,261 h-74 a6.0,6.0 0 0 1 -6.0,-6.0 v-8" class="combo"/>
-<path d="M280,261 h74 a6.0,6.0 0 0 0 6.0,-6.0 v-8" class="combo"/>
-<rect rx="4" ry="4" x="265" y="246" width="30" height="30" class="combo"/>
-<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="269" y="250" height="22" width="22.0" class="combo tap glyph mdi:content-cut"/>
+<path d="M280,263 h-74 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
+<path d="M280,263 h74 a6.0,6.0 0 0 0 6.0,-6.0 v-10" class="combo"/>
+<rect rx="4" ry="4" x="265" y="248" width="30" height="30" class="combo"/>
+<use href="#mdi:content-cut" xlink:href="#mdi:content-cut" x="269" y="252" height="22" width="22.0" class="combo tap glyph mdi:content-cut"/>
 </g>
 <g class="combo combopos-4">
 <rect rx="4" ry="4" x="305" y="195" width="30" height="30" class="combo"/>
 <use href="#mdi:content-paste" xlink:href="#mdi:content-paste" x="309" y="199" height="22" width="22.0" class="combo tap glyph mdi:content-paste"/>
 </g>
 <g class="combo combopos-6">
-<path d="M880,267 h-74 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
-<path d="M880,267 l0,-40" class="combo"/>
-<path d="M880,267 h74 a6.0,6.0 0 0 0 6.0,-6.0 v-8" class="combo"/>
-<rect rx="4" ry="4" x="865" y="252" width="30" height="30" class="combo"/>
-<text x="880" y="267" class="combo tap">NUM</text>
+<path d="M880,269 h-74 a6.0,6.0 0 0 1 -6.0,-6.0 v-12" class="combo"/>
+<path d="M880,269 l0,-42" class="combo"/>
+<path d="M880,269 h74 a6.0,6.0 0 0 0 6.0,-6.0 v-10" class="combo"/>
+<rect rx="4" ry="4" x="865" y="254" width="30" height="30" class="combo"/>
+<text x="880" y="269" class="combo tap">NUM</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="4" ry="4" x="145" y="299" width="30" height="30" class="combo"/>
@@ -1430,11 +1430,11 @@ path.combo {
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 </g>
 <g class="combo combopos-0">
-<path d="M880,267 h-74 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
-<path d="M880,267 l0,-40" class="combo"/>
-<path d="M880,267 h74 a6.0,6.0 0 0 0 6.0,-6.0 v-8" class="combo"/>
-<rect rx="4" ry="4" x="865" y="252" width="30" height="30" class="combo"/>
-<text x="880" y="267" class="combo tap">NUM</text>
+<path d="M880,269 h-74 a6.0,6.0 0 0 1 -6.0,-6.0 v-12" class="combo"/>
+<path d="M880,269 l0,-42" class="combo"/>
+<path d="M880,269 h74 a6.0,6.0 0 0 0 6.0,-6.0 v-10" class="combo"/>
+<rect rx="4" ry="4" x="865" y="254" width="30" height="30" class="combo"/>
+<text x="880" y="269" class="combo tap">NUM</text>
 </g>
 </g>
 </g>

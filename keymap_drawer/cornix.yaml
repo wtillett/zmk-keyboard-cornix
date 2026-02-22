@@ -424,6 +424,7 @@ combos:
   k: $$mdi:content-cut$$
   l: [Base, Canary]
   a: bottom
+  o: 0.025
 - p: [27, 28]
   k: $$mdi:content-paste$$
   l: [Base, Canary]
@@ -435,6 +436,7 @@ combos:
   k: NUM
   l: [Base, Canary, Num]
   a: bottom
+  o: 0.025
 - p: [40, 39]
   k: Debug
   l: [Base, Canary]
