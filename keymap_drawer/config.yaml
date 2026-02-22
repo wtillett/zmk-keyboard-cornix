@@ -249,8 +249,10 @@ parse_config:
       hidden: true
     combo_cut:
       align: bottom
+      offset: 0.025
     combo_num:
       align: bottom
+      offset: 0.025
 
   zmk_preamble: "#define KEYMAP_DRAWER"
   zmk_additional_includes: ["zmk-helpers/include"]
