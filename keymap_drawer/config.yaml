@@ -282,7 +282,7 @@ draw_config:
 
   # padding between layers
   outer_pad_w: 0
-  outer_pad_h: 0
+  outer_pad_h: 20
 
   # gap between two halves for ortho layout generator
   # split_gap: 20 # This doesn't seem to have any effect either? 🤔
@@ -474,7 +474,7 @@ draw_config:
     /* Layer labels */
     text.label {
         font-size: 36px;
-        text-anchor: start;
+        text-anchor: middle;
         paint-order: stroke;
         fill: var(--color--layer--text);
         translate: 581px 146px;
