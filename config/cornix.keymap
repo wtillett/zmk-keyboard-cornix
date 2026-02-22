@@ -403,7 +403,7 @@
             bindings = <
 &none  &kp F1  &kp F2        &kp F3      &kp F4     &kp F5                   &kp HOME  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none       &kp PRINTSCREEN
 &none  &kp F6  &kp LALT  &kp LSHIFT  &kp LCTRL  &kp F7                   &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT  &none
-&none  &kp F8  &kp F9        &kp F10     &kp F11    &kp F12  &trans  &trans  &none     &none           &none           &none            &none       &none
+&none  &kp F8  &kp F9        &kp F10     &kp F11    &kp F12  &kp C_MUTE  &trans  &none     &none           &none           &none            &none       &none
 &none  &none   &none         &none       &trans     &trans                   &none     &trans          &none           &none            &none       &none
             >;
 
@@ -423,7 +423,7 @@
             bindings = <
 &trans  &kp N3  &kp N2  &kp N1  &none   &none                      &kp PLUS   &kp N7  &kp N8   &kp N9  &kp ASTRK  &kp BSPC
 &trans  &kp N6  &kp N5  &kp N4  &none   &none                      &kp COMMA  &kp N4  &kp N5   &kp N6  &kp SLASH  &none
-&trans  &kp N9  &kp N8  &kp N7  &none   &none      &trans  &trans  &kp MINUS  &kp N1  &kp N2   &kp N3  &kp SLASH  &kp ENTER
+&trans  &kp N9  &kp N8  &kp N7  &none   &none      &kp C_MUTE  &trans  &kp MINUS  &kp N1  &kp N2   &kp N3  &kp SLASH  &kp ENTER
 &bm_poc_path   &none   &none   &lt_nav WIN BSPC   &lt SYM TAB  &kp ENTER                  &kp TAB    &kp N0  &kp DOT  &none   &none      &none
             >;
 
@@ -443,7 +443,7 @@
             bindings = <
 &kp ESC  &kp GRAVE  &kp ASTRK  &kp LT    &kp GT     &kp UNDER                    &kp DOLLAR  &kp LBRC              &kp RBRC               &kp CARET  &none     &none
 &none    &kp EXCL   &kp DQT    &kp FSLH  &kp MINUS  &kp PLUS                     &kp HASH    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp AMPS  &none
-&none    &kp TILDE  &kp PLUS   &kp LBKT  &kp RBKT   &kp PERCENT  &trans  &trans  &kp AT      &kp FSLH              &kp PIPE               &kp BSLH   &none     &none
+&none    &kp TILDE  &kp PLUS   &kp LBKT  &kp RBKT   &kp PERCENT  &kp C_MUTE  &trans  &kp AT      &kp FSLH              &kp PIPE               &kp BSLH   &none     &none
 &none    &none      &none      &trans     &trans      &trans                        &trans       &trans                 &trans                  &none      &none     &none
             >;
 
@@ -455,7 +455,7 @@
             bindings = <
 &none  &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none                            &none           &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none            &none
 &none  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT                  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &kp RG(TAB)
-&none  &none           &mkp MB2        &mkp MB3        &mkp MB1         &none            &trans  &trans  &none           &mkp MB1        &mkp MB3        &mkp MB2         &none            &none
+&none  &none           &mkp MB2        &mkp MB3        &mkp MB1         &none            &kp C_MUTE  &trans  &none           &mkp MB1        &mkp MB3        &mkp MB2         &none            &none
 &none  &none           &none           &mkp MB2        &mkp MB3         &mkp MB1                         &mkp MB1        &mkp MB3        &mkp MB2        &none            &none            &none
             >;
 
@@ -468,7 +468,7 @@
             bindings = <
 &kp GRAVE  &kp Q  &kp W  &kp E     &kp R      &kp T                      &kp Y      &kp U      &kp I      &kp O    &kp P     &kp BSPC
 &kp TAB    &kp A  &kp S  &kp D     &kp F      &kp G                      &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V      &kp B      &trans  &trans  &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V      &kp B      &kp C_MUTE  &trans  &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
 &none      &none  &none  &kp LALT  &kp LSHFT  &kp SPACE                  &kp SPACE  &kp ENTER  &kp RGUI   &none    &none     &none
             >;
 
