@@ -43,10 +43,10 @@ layers:
   - ''
   - ''
   - {t: '$$mdi:backspace-outline$$', h: WIN}
-  - {t: '$$mdi:keyboard-tab$$', h: SYM}
-  - {t: '$$phosphor:regular/arrow-fat-up$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$phosphor:regular/arrow-fat-up$$'}
+  - '&shift_repeat'
   - {t: '$$mdi:keyboard-space$$', h: WIN}
-  - {t: '$$mdi:keyboard-return$$', h: SYM}
+  - {t: '$$mdi:keyboard-return$$', h: '$$phosphor:regular/arrow-fat-up$$'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: NAV}
   - ''
   - ''
@@ -94,10 +94,10 @@ layers:
   - ''
   - ''
   - {t: '$$mdi:backspace-outline$$', h: WIN}
-  - {t: '$$mdi:keyboard-tab$$', h: SYM}
-  - {t: '$$phosphor:regular/arrow-fat-up$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$phosphor:regular/arrow-fat-up$$'}
+  - '&shift_repeat'
   - {t: '$$mdi:keyboard-space$$', h: WIN}
-  - {t: '$$mdi:keyboard-return$$', h: SYM}
+  - {t: '$$mdi:keyboard-return$$', h: '$$phosphor:regular/arrow-fat-up$$'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: NAV}
   - ''
   - ''
@@ -414,6 +414,9 @@ combos:
   l: [Base, Canary]
   a: bottom
   o: 0.125
+- p: [42, 45]
+  k: $$mdi:alpha-w-box$$
+  l: [Base, Canary, Game]
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
   l: [Base, Canary, Game]
