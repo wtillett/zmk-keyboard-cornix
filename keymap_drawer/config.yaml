@@ -423,7 +423,7 @@ draw_config:
 
         --color--turquoise--500: rgb(51, 204, 204);
 
-        --color--bg: transparent;
+        --color--bg: black;
         --color--text: var(--color--material--blue-gray--900);
 
         --color--layer--text: var(--color--material--blue-gray--400);

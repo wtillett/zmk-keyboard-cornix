@@ -14,8 +14,8 @@
 
 // quick tapping for shift
 
-#define HM_TAPPING_TERM_FAST 200
-#define HM_PRIOR_IDLE 50
+#define HM_TAPPING_TERM_FAST 180
+#define HM_PRIOR_IDLE 40
 #define BASE 0
 #define CANARY 1
 #define NAV 2
@@ -108,8 +108,6 @@
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
-            //flavor = "balanced";
-
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <200>;
@@ -136,33 +134,13 @@
             hold-while-undecided;
         };
 
-        /*
-         * Non-Positional Homerow Mods
-         * Used for &mm_grescm_gui behavior on left hand.
-         *
-         * Usage: &hm LSHFT T
-         * Tap: T
-         * Tap-Tap-Hold: Repeat T
-         * Hold: LSHIFT
-         */
-
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-
-            flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM>;
-            quick-tap-ms = <200>;
-        };
-
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
 
             flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM>;
+            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
         };
@@ -173,7 +151,7 @@
             bindings = <&mo>, <&kp>;
 
             flavor = "hold-preferred";
-            tapping-term-ms = <HM_TAPPING_TERM>;
+            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
         };
@@ -278,6 +256,12 @@
             layers = <BASE CANARY>;
         };
 
+        combo_caps_word {
+            key-positions = <42 45>;
+            bindings = <&caps_word>;
+            layers = <BASE CANARY GAME>;
+        };
+
         combo_esc {
             key-positions = <0 1>;
             bindings = <&kp ESC>;
@@ -361,7 +345,7 @@
 &kp GRAVE      &kp Q         &kp W    &kp E                     &kp R              &kp T                               &kp Y        &kp U              &kp I                      &kp O    &kp P                 &kp BSLH
 &kp BACKSPACE  &kp A         &lt SYM S  &hm_shift_l LSHFT D  &lt NUM F            &kp G                               &kp H        &lt WIN J            &hm_shift_r RSHFT K  &lt SYM L  &hm_r RALT SEMI  &kp SQT
 &td_lprn_lcbr  &hm_l LGUI Z  &kp X    &kp C                     &hm_lctrl LCTRL V  &kp B           &kp C_MUTE  &tog CANARY  &kp N        &hm_rctrl RCTRL M  &kp COMMA                  &kp DOT  &hm_r RGUI SLASH      &td_rprn_rcbr
-&kp LALT       &none         &none    &lt_nav WIN BSPC            &lt SYM TAB          &smart_shift                      &lt WIN SPACE  &lt SYM ENTER        &lt_nav NAV DELETE           &none    &none                 &none
+&kp LALT       &none         &none    &lt_nav WIN BSPC            &hm_shift_l LSHFT TAB          &shift_repeat                      &lt WIN SPACE  &hm_shift_r RSHFT ENTER        &lt_nav NAV DELETE           &none    &none                 &none
             >;
 
             sensor-bindings =
@@ -383,7 +367,7 @@
 &kp GRAVE      &kp W         &kp L    &kp Y                     &kp P              &kp B                   &kp Z   &kp F              &kp O                      &kp U      &kp SQT            &kp BACKSLASH
 &kp BACKSPACE  &kp C         &lt SYM R  &hm_shift_l LSHFT S  &lt NUM T            &kp G                   &kp M   &lt WIN N            &hm_shift_r RSHFT E  &lt SYM I    &hm_r RALT A  &kp SEMICOLON
 &td_lprn_lcbr  &hm_l LGUI Q  &kp J    &kp V                     &hm_lctrl LCTRL D  &kp K   &kp C_MUTE  &tog CANARY  &kp X   &hm_rctrl RCTRL H  &kp SLASH                  &kp COMMA  &hm_r RGUI DOT     &td_rprn_rcbr
-&kp LALT       &none         &none    &lt_nav WIN BSPC            &lt SYM TAB          &smart_shift                      &lt WIN SPACE  &lt SYM ENTER        &lt_nav NAV DELETE           &none    &none                 &none
+&kp LALT       &none         &none    &lt_nav WIN BSPC            &hm_shift_l LSHFT TAB          &shift_repeat                      &lt WIN SPACE  &hm_shift_r RSHFT ENTER        &lt_nav NAV DELETE           &none    &none                 &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
