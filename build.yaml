@@ -36,7 +36,7 @@ include:
   #   artifact-name: cornix_left_for_dongle_nosd
 
   - board: cornix_right
-    shield: raw_hid_adapter
+    # shield: raw_hid_adapter
     artifact-name: cornix_right_nosd
 
   - board: cornix_right
